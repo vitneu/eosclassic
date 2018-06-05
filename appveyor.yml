@@ -14,11 +14,6 @@ environment:
       MSYS2_BITS: 64
       MSYSTEM: MINGW64
       PATH: C:\msys64\mingw64\bin\;C:\Program Files (x86)\NSIS\;%PATH%
-    - GETH_ARCH: 386
-      MSYS2_ARCH: i686
-      MSYS2_BITS: 32
-      MSYSTEM: MINGW32
-      PATH: C:\msys64\mingw32\bin\;C:\Program Files (x86)\NSIS\;%PATH%
 
 install:
   - git submodule update --init
@@ -30,11 +25,21 @@ install:
 
 build_script:
   - go run build\ci.go install
-
-after_build:
-  - go run build\ci.go archive -type zip -signer WINDOWS_SIGNING_KEY -upload gethstore/builds
-  - go run build\ci.go nsis -signer WINDOWS_SIGNING_KEY -upload gethstore/builds
+  - 7z a eosclassic-win64-%APPVEYOR_REPO_TAG_NAME%.zip .\build\bin\geth.exe
 
 test_script:
   - set CGO_ENABLED=1
-  - go run build\ci.go test -coverage
+  - go run build\ci.go test
+
+artifacts:
+  - path: '*.zip'
+    name: geth
+
+deploy:
+  artifact: /eosclassic-win64-%APPVEYOR_REPO_TAG_NAME%\.zip.*/
+  auth_token:
+    secure: dh3IhHCLaCRLabzjT61WVrVRwtzXf0Q7/nNOdvvRzwpS2o4mYdHSn1KP9K1t2G4U
+  draft: true
+  on:
+    appveyor_repo_tag: true
+  provider: GitHub

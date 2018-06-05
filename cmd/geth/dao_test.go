@@ -89,7 +89,7 @@ func TestDAOForkBlockNewChain(t *testing.T) {
 		expectVote  bool
 	}{
 		// Test DAO Default Mainnet
-		{"", params.MainnetChainConfig.DAOForkBlock, true},
+		{"", params.EOSClassicChainConfig.DAOForkBlock, true},
 		// test DAO Init Old Privnet
 		{daoOldGenesis, nil, false},
 		// test DAO Default No Fork Privnet
@@ -127,7 +127,7 @@ func testDAOForkBlockNewChain(t *testing.T, test int, genesis string, expectBloc
 	}
 	defer db.Close()
 
-	genesisHash := common.HexToHash("0xd4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3")
+	genesisHash := common.HexToHash("0xebec6b948b495c54b23388dc5b1f5c6c5a04abf792a52956a0ef72a90b4e3814")
 	if genesis != "" {
 		genesisHash = daoGenesisHash
 	}

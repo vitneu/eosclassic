@@ -159,8 +159,8 @@ func SetupGenesisBlock(db ethdb.Database, genesis *Genesis) (*params.ChainConfig
 	stored := rawdb.ReadCanonicalHash(db, 0)
 	if (stored == common.Hash{}) {
 		if genesis == nil {
-			log.Info("Writing default main-net genesis block")
-			genesis = DefaultGenesisBlock()
+			log.Info("Writing default EOS Classic main-net genesis block")
+			genesis = EOSClassicGenesisBlock()
 		} else {
 			log.Info("Writing custom genesis block")
 		}

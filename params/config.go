@@ -24,8 +24,9 @@ import (
 )
 
 var (
-	MainnetGenesisHash = common.HexToHash("0xd4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3") // Mainnet genesis hash to enforce below configs on
-	TestnetGenesisHash = common.HexToHash("0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d") // Testnet genesis hash to enforce below configs on
+	MainnetGenesisHash    = common.HexToHash("0xd4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3") // Mainnet genesis hash to enforce below configs on
+	TestnetGenesisHash    = common.HexToHash("0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d") // Testnet genesis hash to enforce below configs on
+	EOSClassicGenesisHash = common.HexToHash("0xebec6b948b495c54b23388dc5b1f5c6c5a04abf792a52956a0ef72a90b4e3814") // EOSClassic genesis hash to enforce below configs on
 )
 
 var (
@@ -40,6 +41,21 @@ var (
 		EIP155Block:         big.NewInt(2675000),
 		EIP158Block:         big.NewInt(2675000),
 		ByzantiumBlock:      big.NewInt(4370000),
+		ConstantinopleBlock: nil,
+		Ethash:              new(EthashConfig),
+	}
+
+	// EOSClassicChainConfig is the chain parameters to run a node on the EOSClassic main network.
+	EOSClassicChainConfig = &ChainConfig{
+		ChainId:             big.NewInt(2018),
+		HomesteadBlock:      big.NewInt(0),
+		DAOForkBlock:        nil,
+		DAOForkSupport:      true,
+		EIP150Block:         big.NewInt(0),
+		EIP150Hash:          common.HexToHash("0xebec6b948b495c54b23388dc5b1f5c6c5a04abf792a52956a0ef72a90b4e3814"),
+		EIP155Block:         big.NewInt(0),
+		EIP158Block:         big.NewInt(0),
+		ByzantiumBlock:      big.NewInt(0),
 		ConstantinopleBlock: nil,
 		Ethash:              new(EthashConfig),
 	}

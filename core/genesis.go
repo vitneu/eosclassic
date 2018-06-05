@@ -213,6 +213,8 @@ func (g *Genesis) configOrDefault(ghash common.Hash) *params.ChainConfig {
 		return params.MainnetChainConfig
 	case ghash == params.TestnetGenesisHash:
 		return params.TestnetChainConfig
+	case ghash == params.EOSClassicGenesisHash:
+		return params.EOSClassicChainConfig
 	default:
 		return params.AllEthashProtocolChanges
 	}
@@ -306,6 +308,20 @@ func DefaultGenesisBlock() *Genesis {
 		GasLimit:   5000,
 		Difficulty: big.NewInt(17179869184),
 		Alloc:      decodePrealloc(mainnetAllocData),
+	}
+}
+
+// EOSClassicGenesisBlock returns the EOSClassic main net genesis block.
+func EOSClassicGenesisBlock() *Genesis {
+	return &Genesis{
+		Config:     params.EOSClassicChainConfig,
+		Nonce:      66,
+		ExtraData:  hexutil.MustDecode("0x3230313820454f5320436c61737369632050726f6a656374"),
+		GasLimit:   10400000,
+		Difficulty: big.NewInt(131072),
+		Timestamp:  1528210800,
+		Coinbase:   common.HexToAddress("0x258183b0F3F50ff55812d73cc56BF86b8b0C1618"),
+		Alloc:      decodePrealloc(eosclassicAllocData),
 	}
 }
 

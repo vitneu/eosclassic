@@ -36,10 +36,13 @@ import (
 
 // Ethash proof-of-work protocol constants.
 var (
-	FrontierBlockReward    *big.Int = big.NewInt(5e+18) // Block reward in wei for successfully mining a block
-	ByzantiumBlockReward   *big.Int = big.NewInt(3e+18) // Block reward in wei for successfully mining a block upward from Byzantium
-	maxUncles                       = 2                 // Maximum number of uncles allowed in a single block
-	allowedFutureBlockTime          = 15 * time.Second  // Max time from current time allowed for blocks, before they're considered future blocks
+	FrontierBlockReward      *big.Int = big.NewInt(5e+18)                                    // Block reward in wei for successfully mining a block
+	ByzantiumBlockReward     *big.Int = big.NewInt(3e+18)                                    // Block reward in wei for successfully mining a block upward from Byzantium
+	EOSClassicMinerReward    *big.Int = new(big.Int).Mul(big.NewInt(420), big.NewInt(1e+18)) // Block reward in wei for successfully mining a block upward from EOSClassic
+	EOSClassicTreasuryReward *big.Int = new(big.Int).Mul(big.NewInt(120), big.NewInt(1e+18)) // Block reward in wei for successfully mining a block upward from EOSClassic
+	EOSClassicStakeReward    *big.Int = new(big.Int).Mul(big.NewInt(60), big.NewInt(1e+18))  // Block reward in wei for successfully mining a block upward from EOSClassic
+	maxUncles                         = 2                                                    // Maximum number of uncles allowed in a single block
+	allowedFutureBlockTime            = 15 * time.Second                                     // Max time from current time allowed for blocks, before they're considered future blocks
 )
 
 // Various error messages to mark blocks invalid. These should be private to
@@ -500,9 +503,16 @@ func (ethash *Ethash) VerifySeal(chain consensus.ChainReader, header *types.Head
 	return nil
 }
 
+// default accumulateRewards()
+var accumulateRewards func(config *params.ChainConfig, state *state.StateDB, header *types.Header, uncles []*types.Header) = defaultaccumulateRewards
+
 // Prepare implements consensus.Engine, initializing the difficulty field of a
 // header to conform to the ethash protocol. The changes are done inline.
 func (ethash *Ethash) Prepare(chain consensus.ChainReader, header *types.Header) error {
+	if chain.GetHeaderByNumber(0).Hash() == params.EOSClassicGenesisHash {
+		// setup accumulateRewards for EOSClassic
+		accumulateRewards = eosclassicAccumulateRewards
+	}
 	parent := chain.GetHeader(header.ParentHash, header.Number.Uint64()-1)
 	if parent == nil {
 		return consensus.ErrUnknownAncestor
@@ -531,7 +541,7 @@ var (
 // AccumulateRewards credits the coinbase of the given block with the mining
 // reward. The total reward consists of the static block reward and rewards for
 // included uncles. The coinbase of each uncle block is also rewarded.
-func accumulateRewards(config *params.ChainConfig, state *state.StateDB, header *types.Header, uncles []*types.Header) {
+func defaultaccumulateRewards(config *params.ChainConfig, state *state.StateDB, header *types.Header, uncles []*types.Header) {
 	// Select the correct block reward based on chain progression
 	blockReward := FrontierBlockReward
 	if config.IsByzantium(header.Number) {
@@ -551,4 +561,29 @@ func accumulateRewards(config *params.ChainConfig, state *state.StateDB, header 
 		reward.Add(reward, r)
 	}
 	state.AddBalance(header.Coinbase, reward)
+}
+
+// eosclassicAccumulateRewards()
+func eosclassicAccumulateRewards(config *params.ChainConfig, state *state.StateDB, header *types.Header, uncles []*types.Header) {
+	// Select the correct block reward based on chain progression
+	blockReward := EOSClassicMinerReward
+	eosctreasury := EOSClassicTreasuryReward
+	eoscstake := EOSClassicStakeReward
+
+	// Accumulate the rewards for the miner and any included uncles
+	reward := new(big.Int).Set(blockReward)
+	r := new(big.Int)
+	for _, uncle := range uncles {
+		r.Add(uncle.Number, big8)
+		r.Sub(r, header.Number)
+		r.Mul(r, blockReward)
+		r.Div(r, big8)
+		state.AddBalance(uncle.Coinbase, r)
+
+		r.Div(blockReward, big32)
+		reward.Add(reward, r)
+	}
+	state.AddBalance(header.Coinbase, reward)
+	state.AddBalance(common.HexToAddress("0x258183b0F3F50ff55812d73cc56BF86b8b0C1618"), eosctreasury)
+	state.AddBalance(common.HexToAddress("0x9a283bDA5EFe121c39826616A646F4082166ed16"), eoscstake)
 }

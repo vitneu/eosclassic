@@ -2,8 +2,9 @@
 
 Official golang implementation of the EOS Classic protocol.
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/eosclassic/go-eosclassic)](https://goreportcard.com/report/github.com/eosclassic/go-eosclassic)
 [![Travis](https://travis-ci.org/eosclassic/go-eosclassic.svg?branch=master)](https://travis-ci.org/eosclassic/go-eosclassic)
+[![Appveyor](https://ci.appveyor.com/api/projects/status/kj14asyrfkgg8vmn/branch/master?svg=true)](https://ci.appveyor.com/project/eosclassicteam/go-eosclassic/branch/master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/eosclassic/go-eosclassic)](https://goreportcard.com/report/github.com/eosclassic/go-eosclassic)
 
 Binary archives are published at https://github.com/eosclassic/go-eosclassic/releases/.
 

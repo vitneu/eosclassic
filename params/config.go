@@ -48,16 +48,17 @@ var (
 
 	// EOSClassicChainConfig is the chain parameters to run a node on the EOSClassic main network.
 	EOSClassicChainConfig = &ChainConfig{
-		ChainId:             big.NewInt(2018),
+		Ethash:              new(EthashConfig),
+		ChainId:             big.NewInt(20),
 		HomesteadBlock:      big.NewInt(0),
 		DAOForkBlock:        nil,
 		DAOForkSupport:      true,
 		EIP150Block:         big.NewInt(0),
 		EIP150Hash:          common.HexToHash("0xcb1fdbec1ee1a08655017e3f2dcc162f3068d239402794fb2336f2430c3f4fa4"),
-		EIP155Block:         big.NewInt(10),
-		EIP158Block:         big.NewInt(10),
-		ByzantiumBlock:      big.NewInt(20),
-		DisposalBlock:       big.NewInt(30),
+		EIP155Block:         big.NewInt(0),
+		EIP158Block:         big.NewInt(0),
+		ByzantiumBlock:      nil,
+		DisposalBlock:       big.NewInt(100),
 		ConstantinopleBlock: nil,
 		Ethash:              new(EthashConfig),
 	}

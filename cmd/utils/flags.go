@@ -1091,7 +1091,7 @@ func SetEthConfig(ctx *cli.Context, stack *node.Node, cfg *eth.Config) {
 		cfg.Genesis = core.DefaultTestnetGenesisBlock()
 	case ctx.GlobalBool(EOSClassicFlag.Name):
 		if !ctx.GlobalIsSet(NetworkIdFlag.Name) {
-			cfg.NetworkId = 2018
+			cfg.NetworkId = 20
 		}
 		cfg.Genesis = core.EOSClassicGenesisBlock()
 	case ctx.GlobalBool(RinkebyFlag.Name):

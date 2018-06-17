@@ -50,7 +50,7 @@ var (
 
 	// EOSClassicChainConfig is the chain parameters to run a node on the EOSClassic main network.
 	EOSClassicChainConfig = &ChainConfig{
-		ChainId:             big.NewInt(20),
+		ChainID:             big.NewInt(20),
 		HomesteadBlock:      big.NewInt(0),
 		DAOForkBlock:        nil,
 		DAOForkSupport:      true,

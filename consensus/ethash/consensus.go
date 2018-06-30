@@ -41,6 +41,9 @@ var (
 	EOSClassicMinerReward    *big.Int = new(big.Int).Mul(big.NewInt(420), big.NewInt(1e+18)) // Block reward in wei for successfully mining a block upward from EOSClassic
 	EOSClassicTreasuryReward *big.Int = new(big.Int).Mul(big.NewInt(120), big.NewInt(1e+18)) // Block reward in wei for successfully mining a block upward from EOSClassic
 	EOSClassicStakeReward    *big.Int = new(big.Int).Mul(big.NewInt(60), big.NewInt(1e+18))  // Block reward in wei for successfully mining a block upward from EOSClassic
+	NewEOSCPOWReward         *big.Int = new(big.Int).Mul(big.NewInt(42), big.NewInt(1e+18))  // Block reward in wei for successfully mining a block upward from NewEOSC
+	NewEOSCFundReward        *big.Int = new(big.Int).Mul(big.NewInt(12), big.NewInt(1e+18))  // Block reward in wei for successfully mining a block upward from NewEOSC
+	NewEOSCPOSReward         *big.Int = new(big.Int).Mul(big.NewInt(6), big.NewInt(1e+18))   // Block reward in wei for successfully mining a block upward from NewEOSC
 	maxUncles                         = 2                                                    // Maximum number of uncles allowed in a single block
 	allowedFutureBlockTime            = 15 * time.Second                                     // Max time from current time allowed for blocks, before they're considered future blocks
 )
@@ -611,7 +614,11 @@ func eosclassicAccumulateRewards(config *params.ChainConfig, state *state.StateD
 	blockReward := EOSClassicMinerReward
 	eosctreasury := EOSClassicTreasuryReward
 	eoscstake := EOSClassicStakeReward
-
+	if config.IsNewEOSC(header.Number) {
+		blockReward = NewEOSCPOWReward
+		eosctreasury = NewEOSCFundReward
+		eoscstake = NewEOSCPOSReward
+	}
 	// Accumulate the rewards for the miner and any included uncles
 	reward := new(big.Int).Set(blockReward)
 	r := new(big.Int)

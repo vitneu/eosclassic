@@ -26,12 +26,12 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/secp256k1"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/go-eosclassic/core"
+	"github.com/eosclassic/go-eosclassic/core/rawdb"
+	"github.com/eosclassic/go-eosclassic/crypto"
+	"github.com/eosclassic/go-eosclassic/crypto/secp256k1"
+	"github.com/eosclassic/go-eosclassic/rlp"
 )
 
 // Constants to match up protocol versions and messages

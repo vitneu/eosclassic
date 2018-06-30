@@ -25,17 +25,17 @@ import (
 	"testing"
 	"time"
 
-	ethereum "github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/bloombits"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rpc"
+	ethereum "github.com/eosclassic/go-eosclassic"
+	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/go-eosclassic/consensus/ethash"
+	"github.com/eosclassic/go-eosclassic/core"
+	"github.com/eosclassic/go-eosclassic/core/bloombits"
+	"github.com/eosclassic/go-eosclassic/core/rawdb"
+	"github.com/eosclassic/go-eosclassic/core/types"
+	"github.com/eosclassic/go-eosclassic/ethdb"
+	"github.com/eosclassic/go-eosclassic/event"
+	"github.com/eosclassic/go-eosclassic/params"
+	"github.com/eosclassic/go-eosclassic/rpc"
 )
 
 type testBackend struct {

@@ -25,14 +25,14 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/accounts/usbwallet"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/discover"
+	"github.com/eosclassic/go-eosclassic/accounts"
+	"github.com/eosclassic/go-eosclassic/accounts/keystore"
+	"github.com/eosclassic/go-eosclassic/accounts/usbwallet"
+	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/go-eosclassic/crypto"
+	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/go-eosclassic/p2p"
+	"github.com/eosclassic/go-eosclassic/p2p/discover"
 )
 
 const (

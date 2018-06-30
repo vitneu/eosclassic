@@ -21,17 +21,17 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/eosclassic/go-eosclassic/accounts"
+	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/go-eosclassic/consensus"
+	"github.com/eosclassic/go-eosclassic/core"
+	"github.com/eosclassic/go-eosclassic/core/state"
+	"github.com/eosclassic/go-eosclassic/core/types"
+	"github.com/eosclassic/go-eosclassic/eth/downloader"
+	"github.com/eosclassic/go-eosclassic/ethdb"
+	"github.com/eosclassic/go-eosclassic/event"
+	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/go-eosclassic/params"
 )
 
 // Backend wraps all methods required for mining.

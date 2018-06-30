@@ -26,11 +26,11 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/ecies"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/go-eosclassic/common/math"
+	"github.com/eosclassic/go-eosclassic/crypto"
+	"github.com/eosclassic/go-eosclassic/crypto/ecies"
+	"github.com/eosclassic/go-eosclassic/rlp"
 )
 
 // Envelope represents a clear-text data packet to transmit through the Whisper

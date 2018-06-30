@@ -249,7 +249,7 @@ func TestPythonInterop(t *testing.T) {
 		wantAddr, _ = hex.DecodeString("a448f24c6d18e575453db13171562b71999873db5b286df957af199ec94617f7")
 		wantSeq     = uint64(1)
 		wantIP      = IP{127, 0, 0, 1}
-		wantUDP     = UDP(25252)
+		wantUDP     = UDP(30303)
 	)
 	if r.Seq() != wantSeq {
 		t.Errorf("wrong seq: got %d, want %d", r.Seq(), wantSeq)

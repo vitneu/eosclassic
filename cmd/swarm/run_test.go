@@ -27,13 +27,13 @@ import (
 	"time"
 
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/internal/cmdtest"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/ethereum/go-ethereum/swarm"
+	"github.com/eosclassic/go-eosclassic/accounts"
+	"github.com/eosclassic/go-eosclassic/accounts/keystore"
+	"github.com/eosclassic/go-eosclassic/internal/cmdtest"
+	"github.com/eosclassic/go-eosclassic/node"
+	"github.com/eosclassic/go-eosclassic/p2p"
+	"github.com/eosclassic/go-eosclassic/rpc"
+	"github.com/eosclassic/go-eosclassic/swarm"
 )
 
 func init() {

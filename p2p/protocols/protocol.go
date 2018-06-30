@@ -34,7 +34,7 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/p2p"
+	"github.com/eosclassic/go-eosclassic/p2p"
 )
 
 // error codes used by this  protocol scheme

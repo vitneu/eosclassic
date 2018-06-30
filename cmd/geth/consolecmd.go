@@ -24,10 +24,10 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/console"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/eosclassic/go-eosclassic/cmd/utils"
+	"github.com/eosclassic/go-eosclassic/console"
+	"github.com/eosclassic/go-eosclassic/node"
+	"github.com/eosclassic/go-eosclassic/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

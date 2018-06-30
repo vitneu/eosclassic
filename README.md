@@ -4,6 +4,7 @@ Official golang implementation of the EOS Classic protocol.
 
 [![Travis](https://travis-ci.org/eosclassic/go-eosclassic.svg?branch=master)](https://travis-ci.org/eosclassic/go-eosclassic)
 [![Appveyor](https://ci.appveyor.com/api/projects/status/kj14asyrfkgg8vmn/branch/master?svg=true)](https://ci.appveyor.com/project/eosclassicteam/go-eosclassic/branch/master)
+[![Docker](https://img.shields.io/docker/build/eosclassic/go-eosclassic.svg)](https://hub.docker.com/r/eosclassic/go-eosclassic)
 [![Github All Releases](https://img.shields.io/github/downloads/eosclassic/go-eosclassic/total.svg)](https://github.com/eosclassic/go-eosclassic/releases)
 [![Go Report Card](https://goreportcard.com/badge/github.com/eosclassic/go-eosclassic)](https://goreportcard.com/report/github.com/eosclassic/go-eosclassic)
 

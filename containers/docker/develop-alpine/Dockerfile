@@ -8,7 +8,7 @@ RUN \
   apk del go git make gcc musl-dev linux-headers && \
   rm -rf /go-eosclassic && rm -rf /var/cache/apk/*
 
-EXPOSE 8545
-EXPOSE 30303
+EXPOSE 8282
+EXPOSE 25252
 
 ENTRYPOINT ["/geth"]

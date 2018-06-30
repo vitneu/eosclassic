@@ -85,7 +85,7 @@ One of the quickest ways to get Ethereum up and running on your machine is by us
 
 ```
 docker run -d --name ethereum-node -v /Users/alice/eosclassic:/root \
-           -p 8545:8545 -p 30303:30303 \
+           -p 8282:8282 -p 25252:25252 \
            ethereum/client-go
 ```
 
@@ -109,7 +109,7 @@ HTTP based JSON-RPC API options:
 
   * `--rpc` Enable the HTTP-RPC server
   * `--rpcaddr` HTTP-RPC server listening interface (default: "localhost")
-  * `--rpcport` HTTP-RPC server listening port (default: 8545)
+  * `--rpcport` HTTP-RPC server listening port (default: 8282)
   * `--rpcapi` API's offered over the HTTP-RPC interface (default: "eth,net,web3")
   * `--rpccorsdomain` Comma separated list of domains from which to accept cross origin requests (browser enforced)
   * `--ws` Enable the WS-RPC server

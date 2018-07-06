@@ -20,9 +20,9 @@ import (
 	"time"
 
 	"github.com/eosclassic/go-eosclassic/cmd/utils"
-	"github.com/eosclassic/go-eosclassic/log"
 	gethmetrics "github.com/eosclassic/go-eosclassic/metrics"
 	"github.com/eosclassic/go-eosclassic/metrics/influxdb"
+	"github.com/eosclassic/go-eosclassic/swarm/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

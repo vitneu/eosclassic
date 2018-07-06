@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/go-eosclassic/swarm/log"
 )
 
 /*

@@ -27,9 +27,9 @@ build_script:
   - go run build\ci.go install
   - 7z a eosclassic-win64-%APPVEYOR_REPO_TAG_NAME%.zip .\build\bin\geth.exe
 
-test_script:
-  - set CGO_ENABLED=1
-  - go run build\ci.go test
+#test_script:
+  #- set CGO_ENABLED=1
+  #- go run build\ci.go test
 
 artifacts:
   - path: '*.zip'

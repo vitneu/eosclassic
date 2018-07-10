@@ -41,6 +41,12 @@ var EOSClassicBootnodes = []string{
 	"enode://b34facef380fde111908348207320b56a75fece06c6c1aef31b35903ec8b2195861c3833c45b6c91019c9ce35423f8e37b04db6e4419d0eea48fff42ee4ee812@13.209.75.168:25252",
 }
 
+// EOSCTestBootnodes are the enode URLs of the P2P bootstrap nodes running on
+// the EOSCTest network.
+var EOSCTestBootnodes = []string{
+	"enode://68141aad001d5984bdd6c935e5f7b89fb55fd6a59585658dcfa6f6ed1b020977107e2baaf0e157bc65afd63e9a6d45f636f6afc3c6208e9c9da185a0ec06f1dd@13.209.35.2:25252",
+}
+
 // TestnetBootnodes are the enode URLs of the P2P bootstrap nodes running on the
 // Ropsten test network.
 var TestnetBootnodes = []string{

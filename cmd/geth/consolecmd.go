@@ -128,6 +128,8 @@ func remoteConsole(ctx *cli.Context) error {
 				path = filepath.Join(path, "rinkeby")
 			} else if ctx.GlobalBool(utils.EOSClassicFlag.Name) {
 				path = filepath.Join(path, "eosclassic")
+			} else if ctx.GlobalBool(utils.EOSCTestFlag.Name) {
+				path = filepath.Join(path, "eosctest")
 			}
 		}
 		endpoint = fmt.Sprintf("%s/geth.ipc", path)

@@ -215,6 +215,8 @@ func (g *Genesis) configOrDefault(ghash common.Hash) *params.ChainConfig {
 		return params.TestnetChainConfig
 	case ghash == params.EOSClassicGenesisHash:
 		return params.EOSClassicChainConfig
+	case ghash == params.EOSCTestGenesisHash:
+		return params.EOSCTestChainConfig
 	default:
 		return params.AllEthashProtocolChanges
 	}
@@ -320,6 +322,18 @@ func EOSClassicGenesisBlock() *Genesis {
 		GasLimit:   10400000,
 		Difficulty: big.NewInt(17179869184),
 		Alloc:      decodePrealloc(eosclassicAllocData),
+	}
+}
+
+// EOSCTestGenesisBlock returns the EOSCTest network genesis block.
+func EOSCTestGenesisBlock() *Genesis {
+	return &Genesis{
+		Config:     params.EOSCTestChainConfig,
+		Nonce:      66,
+		ExtraData:  hexutil.MustDecode("0x3230313820454f5320436c61737369632050726f6a656374"),
+		GasLimit:   5000,
+		Difficulty: big.NewInt(131072),
+		Alloc:      decodePrealloc(eosctestAllocData),
 	}
 }
 

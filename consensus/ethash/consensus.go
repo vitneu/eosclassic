@@ -558,6 +558,10 @@ func (ethash *Ethash) Prepare(chain consensus.ChainReader, header *types.Header)
 		// setup accumulateRewards for EOSClassic
 		accumulateRewards = eosclassicAccumulateRewards
 	}
+	if chain.GetHeaderByNumber(0).Hash() == params.EOSCTestGenesisHash {
+		// setup accumulateRewards for EOSCTest
+		accumulateRewards = eosctestAccumulateRewards
+	}
 	parent := chain.GetHeader(header.ParentHash, header.Number.Uint64()-1)
 	if parent == nil {
 		return consensus.ErrUnknownAncestor
@@ -619,6 +623,30 @@ func eosclassicAccumulateRewards(config *params.ChainConfig, state *state.StateD
 		eosctreasury = NewEOSCFundReward
 		eoscstake = NewEOSCPOSReward
 	}
+	// Accumulate the rewards for the miner and any included uncles
+	reward := new(big.Int).Set(blockReward)
+	r := new(big.Int)
+	for _, uncle := range uncles {
+		r.Add(uncle.Number, big8)
+		r.Sub(r, header.Number)
+		r.Mul(r, blockReward)
+		r.Div(r, big8)
+		state.AddBalance(uncle.Coinbase, r)
+
+		r.Div(blockReward, big32)
+		reward.Add(reward, r)
+	}
+	state.AddBalance(header.Coinbase, reward)
+	state.AddBalance(common.HexToAddress("0x258183b0F3F50ff55812d73cc56BF86b8b0C1618"), eosctreasury)
+	state.AddBalance(common.HexToAddress("0x9a283bDA5EFe121c39826616A646F4082166ed16"), eoscstake)
+}
+
+// eosctestAccumulateRewards()
+func eosctestAccumulateRewards(config *params.ChainConfig, state *state.StateDB, header *types.Header, uncles []*types.Header) {
+	// Select the correct block reward based on chain progression
+	blockReward := NewEOSCPOWReward
+	eosctreasury := NewEOSCFundReward
+	eoscstake := NewEOSCPOSReward
 	// Accumulate the rewards for the miner and any included uncles
 	reward := new(big.Int).Set(blockReward)
 	r := new(big.Int)

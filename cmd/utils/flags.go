@@ -139,7 +139,11 @@ var (
 	}
 	EOSClassicFlag = cli.BoolFlag{
 		Name:  "eosclassic",
-		Usage: "EOSClassic network: pre-configured EOSClassic mainnet",
+		Usage: "EOSClassic network: pre-configured EOS Classic mainnet",
+	}
+	EOSCTestFlag = cli.BoolFlag{
+		Name:  "eosctest",
+		Usage: "EOSCTest network: pre-configured EOS Classic testnet",
 	}
 	RinkebyFlag = cli.BoolFlag{
 		Name:  "rinkeby",
@@ -586,6 +590,9 @@ func MakeDataDir(ctx *cli.Context) string {
 		if ctx.GlobalBool(EOSClassicFlag.Name) {
 			return filepath.Join(path, "eosclassic")
 		}
+		if ctx.GlobalBool(EOSCTestFlag.Name) {
+			return filepath.Join(path, "eosctest")
+		}
 		if ctx.GlobalBool(RinkebyFlag.Name) {
 			return filepath.Join(path, "rinkeby")
 		}
@@ -643,6 +650,8 @@ func setBootstrapNodes(ctx *cli.Context, cfg *p2p.Config) {
 		urls = params.TestnetBootnodes
 	case ctx.GlobalBool(EOSClassicFlag.Name):
 		urls = params.EOSClassicBootnodes
+	case ctx.GlobalBool(EOSCTestFlag.Name):
+		urls = params.EOSCTestBootnodes
 	case ctx.GlobalBool(RinkebyFlag.Name):
 		urls = params.RinkebyBootnodes
 	case cfg.BootstrapNodes != nil:
@@ -931,6 +940,8 @@ func SetNodeConfig(ctx *cli.Context, cfg *node.Config) {
 		cfg.DataDir = filepath.Join(node.DefaultDataDir(), "testnet")
 	case ctx.GlobalBool(EOSClassicFlag.Name):
 		cfg.DataDir = filepath.Join(node.DefaultDataDir(), "eosclassic")
+	case ctx.GlobalBool(EOSCTestFlag.Name):
+		cfg.DataDir = filepath.Join(node.DefaultDataDir(), "eosctest")
 	case ctx.GlobalBool(RinkebyFlag.Name):
 		cfg.DataDir = filepath.Join(node.DefaultDataDir(), "rinkeby")
 	}
@@ -1060,7 +1071,7 @@ func SetShhConfig(ctx *cli.Context, stack *node.Node, cfg *whisper.Config) {
 // SetEthConfig applies eth-related command line flags to the config.
 func SetEthConfig(ctx *cli.Context, stack *node.Node, cfg *eth.Config) {
 	// Avoid conflicting network flags
-	checkExclusive(ctx, DeveloperFlag, TestnetFlag, RinkebyFlag, EOSClassicFlag)
+	checkExclusive(ctx, DeveloperFlag, TestnetFlag, RinkebyFlag, EOSClassicFlag, EOSCTestFlag)
 	checkExclusive(ctx, FastSyncFlag, LightModeFlag, SyncModeFlag)
 	checkExclusive(ctx, LightServFlag, LightModeFlag)
 	checkExclusive(ctx, LightServFlag, SyncModeFlag, "light")
@@ -1131,6 +1142,11 @@ func SetEthConfig(ctx *cli.Context, stack *node.Node, cfg *eth.Config) {
 			cfg.NetworkId = 20
 		}
 		cfg.Genesis = core.EOSClassicGenesisBlock()
+	case ctx.GlobalBool(EOSCTestFlag.Name):
+		if !ctx.GlobalIsSet(NetworkIdFlag.Name) {
+			cfg.NetworkId = 21
+		}
+		cfg.Genesis = core.EOSCTestGenesisBlock()
 	case ctx.GlobalBool(RinkebyFlag.Name):
 		if !ctx.GlobalIsSet(NetworkIdFlag.Name) {
 			cfg.NetworkId = 4
@@ -1282,6 +1298,8 @@ func MakeGenesis(ctx *cli.Context) *core.Genesis {
 		genesis = core.DefaultTestnetGenesisBlock()
 	case ctx.GlobalBool(EOSClassicFlag.Name):
 		genesis = core.EOSClassicGenesisBlock()
+	case ctx.GlobalBool(EOSCTestFlag.Name):
+		genesis = core.EOSCTestGenesisBlock()
 	case ctx.GlobalBool(RinkebyFlag.Name):
 		genesis = core.DefaultRinkebyGenesisBlock()
 	case ctx.GlobalBool(DeveloperFlag.Name):

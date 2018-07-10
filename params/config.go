@@ -28,6 +28,7 @@ var (
 	MainnetGenesisHash    = common.HexToHash("0xd4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3")
 	TestnetGenesisHash    = common.HexToHash("0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d")
 	EOSClassicGenesisHash = common.HexToHash("0xee8d34684cb1b1047a4bd326c43db0c85af8ffa82e9f54b6d557b4ad4eeb9135")
+	EOSCTestGenesisHash   = common.HexToHash("0x6cd22d07d4de4331d4fa73a681ec8a204b31698e00e22044ca3f4c6be3f1517d")
 )
 
 var (
@@ -38,7 +39,7 @@ var (
 		DAOForkBlock:        big.NewInt(1920000),
 		DAOForkSupport:      true,
 		EIP150Block:         big.NewInt(2463000),
-		EIP150Hash:          common.HexToHash("0x2086799aeebeae135c246c65021c82b4e15a2c451340993aacfd2751886514f0"),
+		EIP150Hash:          common.HexToHash("0x6cd22d07d4de4331d4fa73a681ec8a204b31698e00e22044ca3f4c6be3f1517d"),
 		EIP155Block:         big.NewInt(2675000),
 		EIP158Block:         big.NewInt(2675000),
 		EIP160Block:         nil,
@@ -63,6 +64,24 @@ var (
 		ByzantiumBlock:      nil,
 		DisposalBlock:       big.NewInt(100),
 		NewEOSCBlock:        big.NewInt(150000),
+		ConstantinopleBlock: nil,
+		Ethash:              new(EthashConfig),
+	}
+
+	// EOSCTestChainConfig is the chain parameters to run a node on the EOS Classic test network.
+	EOSCTestChainConfig = &ChainConfig{
+		ChainID:             big.NewInt(21),
+		HomesteadBlock:      big.NewInt(0),
+		DAOForkBlock:        nil,
+		DAOForkSupport:      true,
+		EIP150Block:         big.NewInt(0),
+		EIP150Hash:          common.HexToHash("0xee8d34684cb1b1047a4bd326c43db0c85af8ffa82e9f54b6d557b4ad4eeb9135"),
+		EIP155Block:         big.NewInt(0),
+		EIP158Block:         big.NewInt(0),
+		EIP160Block:         big.NewInt(0),
+		ByzantiumBlock:      nil,
+		DisposalBlock:       big.NewInt(0),
+		NewEOSCBlock:        nil,
 		ConstantinopleBlock: nil,
 		Ethash:              new(EthashConfig),
 	}

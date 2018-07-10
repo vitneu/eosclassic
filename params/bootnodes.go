@@ -44,7 +44,7 @@ var EOSClassicBootnodes = []string{
 // EOSCTestBootnodes are the enode URLs of the P2P bootstrap nodes running on
 // the EOSCTest network.
 var EOSCTestBootnodes = []string{
-	"enode://68141aad001d5984bdd6c935e5f7b89fb55fd6a59585658dcfa6f6ed1b020977107e2baaf0e157bc65afd63e9a6d45f636f6afc3c6208e9c9da185a0ec06f1dd@13.209.35.2:25252",
+	"enode://b4d4ca07e4b05accc963b8e0c3e08e12261f6bb493e58e4f855bf66df2e5f1695008af794d2267da43a0d22a8820bd74f6fbb4218ebac5adc7970dbe90b20426@13.209.35.2:25252",
 }
 
 // TestnetBootnodes are the enode URLs of the P2P bootstrap nodes running on the

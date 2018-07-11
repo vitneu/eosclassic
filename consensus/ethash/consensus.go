@@ -625,22 +625,42 @@ func eosclassicAccumulateRewards(config *params.ChainConfig, state *state.StateD
 		eosctreasury = NewEOSCFundReward
 		eoscstake = NewEOSCPOSReward
 	}
-	// Accumulate the rewards for the miner and any included uncles
-	reward := new(big.Int).Set(blockReward)
-	r := new(big.Int)
-	for _, uncle := range uncles {
-		r.Add(uncle.Number, big8)
-		r.Sub(r, header.Number)
-		r.Mul(r, blockReward)
-		r.Div(r, big8)
-		state.AddBalance(uncle.Coinbase, r)
+	if config.HasECIP1017() {
+		// Ensure value 'era' is configured.
+		eraLen := config.ECIP1017EraRounds
+		era := GetBlockEra(header.Number, eraLen)
+		wr := GetBlockWinnerRewardByEra(era, blockReward)                    // wr "winner reward". 5, 4, 3.2, 2.56, ...\
+		et := GetEOSCTreasuryRewardByEra(era, eosctreasury)                  // et "eosc treasury"
+		es := GetEOSCStakeRewardByEra(era, eoscstake)                        // es "eosc stake"
+		wurs := GetBlockWinnerRewardForUnclesByEra(era, uncles, blockReward) // wurs "winner uncle rewards"
+		wr.Add(wr, wurs)
+		state.AddBalance(header.Coinbase, wr) // $$
+		state.AddBalance(common.HexToAddress("0x258183b0F3F50ff55812d73cc56BF86b8b0C1618"), et)
+		state.AddBalance(common.HexToAddress("0x9a283bDA5EFe121c39826616A646F4082166ed16"), es)
 
-		r.Div(blockReward, big32)
-		reward.Add(reward, r)
+		// Reward uncle miners.
+		for _, uncle := range uncles {
+			ur := GetBlockUncleRewardByEra(era, header, uncle, blockReward)
+			state.AddBalance(uncle.Coinbase, ur) // $$
+		}
+	} else {
+		// Accumulate the rewards for the miner and any included uncles
+		reward := new(big.Int).Set(blockReward)
+		r := new(big.Int)
+		for _, uncle := range uncles {
+			r.Add(uncle.Number, big8)
+			r.Sub(r, header.Number)
+			r.Mul(r, blockReward)
+			r.Div(r, big8)
+			state.AddBalance(uncle.Coinbase, r)
+
+			r.Div(blockReward, big32)
+			reward.Add(reward, r)
+		}
+		state.AddBalance(header.Coinbase, reward)
+		state.AddBalance(common.HexToAddress("0x258183b0F3F50ff55812d73cc56BF86b8b0C1618"), eosctreasury)
+		state.AddBalance(common.HexToAddress("0x9a283bDA5EFe121c39826616A646F4082166ed16"), eoscstake)
 	}
-	state.AddBalance(header.Coinbase, reward)
-	state.AddBalance(common.HexToAddress("0x258183b0F3F50ff55812d73cc56BF86b8b0C1618"), eosctreasury)
-	state.AddBalance(common.HexToAddress("0x9a283bDA5EFe121c39826616A646F4082166ed16"), eoscstake)
 }
 
 // eosctestAccumulateRewards()

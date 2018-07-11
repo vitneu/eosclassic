@@ -65,7 +65,7 @@ var (
 		ByzantiumBlock:      nil,
 		DisposalBlock:       big.NewInt(100),
 		NewEOSCBlock:        big.NewInt(150000),
-		ECIP1017EraRounds:   nil,
+		ECIP1017EraRounds:   big.NewInt(2500000),
 		ConstantinopleBlock: nil,
 		Ethash:              new(EthashConfig),
 	}
@@ -84,7 +84,7 @@ var (
 		ByzantiumBlock:      nil,
 		DisposalBlock:       big.NewInt(0),
 		NewEOSCBlock:        nil,
-		ECIP1017EraRounds:   big.NewInt(500),
+		ECIP1017EraRounds:   big.NewInt(600000),
 		ConstantinopleBlock: nil,
 		Ethash:              new(EthashConfig),
 	}

@@ -12,10 +12,6 @@ Binary archives are published at https://github.com/eosclassic/go-eosclassic/rel
 
 ## Building the source
 
-For prerequisites and detailed build instructions please read the
-[Installation Instructions](https://github.com/eosclassic/go-eosclassic/wiki/Building-EOSC)
-on the wiki.
-
 Building geth requires both a Go (version 1.7 or later) and a C compiler.
 You can install them using your favourite package manager.
 Once the dependencies are installed, run
@@ -28,11 +24,11 @@ or, to build the full suite of utilities:
 
 ## Executables
 
-The go-ethereum project comes with several wrappers/executables found in the `cmd` directory.
+The go-eosclassic project comes with several wrappers/executables found in the `cmd` directory.
 
 | Command    | Description |
 |:----------:|-------------|
-| **`geth`** | Our main Ethereum CLI client. It is the entry point into the EOS Classic network (main-, test- or private net), capable of running as a full node (default) archive node (retaining all historical state) or a light node (retrieving data live). It can be used by other processes as a gateway into the Ethereum network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `geth --help` and the [CLI Wiki page](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options) for command line options. |
+| **`geth`** | Our main EOS Classic CLI client. It is the entry point into the EOS Classic network (main-, test- or private net), capable of running as a full node (default) archive node (retaining all historical state) or a light node (retrieving data live). It can be used by other processes as a gateway into the EOS Classic network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `geth --help` and the [CLI Wiki page](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options) for command line options. |
 
 ## Running geth
 
@@ -81,12 +77,12 @@ $ geth --your-favourite-flags dumpconfig
 
 #### Docker quick start
 
-One of the quickest ways to get Ethereum up and running on your machine is by using Docker:
+One of the quickest ways to get EOS Classic up and running on your machine is by using Docker:
 
 ```
 docker run -d --name ethereum-node -v /Users/alice/eosclassic:/root \
            -p 8282:8282 -p 25252:25252 \
-           ethereum/client-go
+           eosclassic/go-eosclassic
 ```
 
 This will start geth in fast-sync mode with a DB memory allowance of 1GB just as the above command does.  It will also create a persistent volume in your home directory for saving your blockchain as well as map the default ports. There is also an `alpine` tag available for a slim version of the image.
@@ -95,7 +91,7 @@ Do not forget `--rpcaddr 0.0.0.0`, if you want to access RPC from other containe
 
 ### Programatically interfacing Geth nodes
 
-As a developer, sooner rather than later you'll want to start interacting with Geth and the Ethereum
+As a developer, sooner rather than later you'll want to start interacting with Geth and the EOS Classic
 network via your own programs and not manually through the console. To aid this, Geth has built-in
 support for a JSON-RPC based APIs ([standard APIs](https://github.com/ethereum/wiki/wiki/JSON-RPC) and
 [Geth specific APIs](https://github.com/ethereum/go-ethereum/wiki/Management-APIs)). These can be
@@ -126,7 +122,7 @@ via HTTP, WS or IPC to a Geth node configured with the above flags and you'll ne
 on all transports. You can reuse the same connection for multiple requests!
 
 **Note: Please understand the security implications of opening up an HTTP/WS based transport before
-doing so! Hackers on the internet are actively trying to subvert Ethereum nodes with exposed APIs!
+doing so! Hackers on the internet are actively trying to subvert EOS Classic nodes with exposed APIs!
 Further, all browser tabs can access locally running webservers, so malicious webpages could try to
 subvert locally available APIs!**
 

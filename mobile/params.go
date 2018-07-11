@@ -32,9 +32,18 @@ func MainnetGenesis() string {
 	return ""
 }
 
-// EOSClassicGenesis returns the JSON spec to use for the EOSClassic network.
+// EOSClassicGenesis returns the JSON spec to use for the EOS Classic network.
 func EOSClassicGenesis() string {
 	enc, err := json.Marshal(core.EOSClassicGenesisBlock())
+	if err != nil {
+		panic(err)
+	}
+	return string(enc)
+}
+
+// EOSCTestGenesis returns the JSON spec to use for the EOS Classic test network.
+func EOSCTestGenesis() string {
+	enc, err := json.Marshal(core.EOSCTestGenesisBlock())
 	if err != nil {
 		panic(err)
 	}

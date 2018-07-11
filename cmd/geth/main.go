@@ -111,6 +111,7 @@ var (
 		utils.DeveloperPeriodFlag,
 		utils.TestnetFlag,
 		utils.EOSClassicFlag,
+		utils.EOSCTestFlag,
 		utils.RinkebyFlag,
 		utils.VMEnableDebugFlag,
 		utils.NetworkIdFlag,

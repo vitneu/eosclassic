@@ -629,7 +629,7 @@ func eosclassicAccumulateRewards(config *params.ChainConfig, state *state.StateD
 		// Ensure value 'era' is configured.
 		eraLen := config.ECIP1017EraRounds
 		era := GetBlockEra(header.Number, eraLen)
-		wr := GetBlockWinnerRewardByEra(era, blockReward)                    // wr "winner reward". 5, 4, 3.2, 2.56, ...\
+		wr := GetBlockWinnerRewardByEra(era, blockReward)                    // wr "winner reward"
 		et := GetEOSCTreasuryRewardByEra(era, eosctreasury)                  // et "eosc treasury"
 		es := GetEOSCStakeRewardByEra(era, eoscstake)                        // es "eosc stake"
 		wurs := GetBlockWinnerRewardForUnclesByEra(era, uncles, blockReward) // wurs "winner uncle rewards"
@@ -673,7 +673,7 @@ func eosctestAccumulateRewards(config *params.ChainConfig, state *state.StateDB,
 		// Ensure value 'era' is configured.
 		eraLen := config.ECIP1017EraRounds
 		era := GetBlockEra(header.Number, eraLen)
-		wr := GetBlockWinnerRewardByEra(era, blockReward)                    // wr "winner reward". 5, 4, 3.2, 2.56, ...\
+		wr := GetBlockWinnerRewardByEra(era, blockReward)                    // wr "winner reward"
 		et := GetEOSCTreasuryRewardByEra(era, eosctreasury)                  // et "eosc treasury"
 		es := GetEOSCStakeRewardByEra(era, eoscstake)                        // es "eosc stake"
 		wurs := GetBlockWinnerRewardForUnclesByEra(era, uncles, blockReward) // wurs "winner uncle rewards"

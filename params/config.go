@@ -77,7 +77,7 @@ var (
 		DAOForkBlock:        nil,
 		DAOForkSupport:      true,
 		EIP150Block:         big.NewInt(2),
-		EIP150Hash:          common.HexToHash("0x0f604e3510dfeb73bd14864f0e44fdb8784da89ab4838341e2f636c62a1a67d7"),
+		EIP150Hash:          common.HexToHash("0xdce8114672c9fe90ebf85e81a46ee23f8fe1a5bf558510bb2b421253d1ed03f7"),
 		EIP155Block:         big.NewInt(3),
 		EIP158Block:         big.NewInt(3),
 		EIP160Block:         nil,

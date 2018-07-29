@@ -329,10 +329,10 @@ func EOSClassicGenesisBlock() *Genesis {
 func EOSCTestGenesisBlock() *Genesis {
 	return &Genesis{
 		Config:     params.EOSCTestChainConfig,
-		Nonce:      66,
-		ExtraData:  hexutil.MustDecode("0x3230313820454f5320436c61737369632050726f6a656374"),
-		GasLimit:   5000,
-		Difficulty: big.NewInt(131072),
+		Timestamp:  1532876400,
+		ExtraData:  hexutil.MustDecode("0x0000000000000000000000000000000000000000000000000000000000000000ddd528a09953f2a4ddc72db826f4f8eee35d478c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"),
+		GasLimit:   100000000,
+		Difficulty: big.NewInt(1),
 		Alloc:      decodePrealloc(eosctestAllocData),
 	}
 }

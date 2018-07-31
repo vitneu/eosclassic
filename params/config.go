@@ -298,6 +298,8 @@ func (c *ChainConfig) GasTable(num *big.Int) GasTable {
 		return GasTableHomestead
 	}
 	switch {
+	case c.IsConstantinople(num):
+		return GasTableConstantinople
 	case c.IsEIP160(num):
 		return GasTableEIP160
 	case c.IsEIP158(num):

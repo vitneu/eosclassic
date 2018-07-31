@@ -1,16 +1,16 @@
-# Build Geth in a stock Go builder container
+# Build EOSC in a stock Go builder container
 FROM golang:1.10-alpine as builder
 
 RUN apk add --no-cache make gcc musl-dev linux-headers
 
 ADD . /go-eosclassic
-RUN cd /go-eosclassic && make geth
+RUN cd /go-eosclassic && make eosc
 
-# Pull Geth into a second stage deploy alpine container
+# Pull EOSC into a second stage deploy alpine container
 FROM alpine:latest
 
 RUN apk add --no-cache ca-certificates
-COPY --from=builder /go-eosclassic/build/bin/geth /usr/local/bin/
+COPY --from=builder /go-eosclassic/build/bin/eosc /usr/local/bin/
 
 EXPOSE 8282 8546 25252 25252/udp
-ENTRYPOINT ["geth"]
+ENTRYPOINT ["eosc"]

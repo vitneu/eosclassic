@@ -236,6 +236,9 @@ func (c *Config) NodeName() string {
 	if name == "geth" || name == "geth-testnet" {
 		name = "Geth"
 	}
+	if name == "eosc" || name == "eosc-testnet" {
+		name = "EOSC"
+	}
 	if c.UserIdent != "" {
 		name += "/" + c.UserIdent
 	}

@@ -70,6 +70,12 @@ var (
 		executablePath("geth"),
 	}
 
+	// Files that end up in the eosc*.zip archive.
+	eoscArchiveFiles = []string{
+		"COPYING",
+		executablePath("eosc"),
+	}
+
 	// Files that end up in the geth-alltools*.zip archive.
 	allToolsArchiveFiles = []string{
 		"COPYING",
@@ -77,6 +83,7 @@ var (
 		executablePath("bootnode"),
 		executablePath("evm"),
 		executablePath("geth"),
+		executablePath("eosc"),
 		executablePath("puppeth"),
 		executablePath("rlpdump"),
 		executablePath("wnode"),
@@ -105,6 +112,10 @@ var (
 		{
 			BinaryName:  "geth",
 			Description: "Ethereum CLI client.",
+		},
+		{
+			BinaryName:  "eosc",
+			Description: "EOS Classic CLI client.",
 		},
 		{
 			BinaryName:  "puppeth",

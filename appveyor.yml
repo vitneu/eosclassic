@@ -9,7 +9,7 @@ environment:
     GOPATH: C:\gopath
     CC: gcc.exe
   matrix:
-    - GETH_ARCH: amd64
+    - EOSC_ARCH: amd64
       MSYS2_ARCH: x86_64
       MSYS2_BITS: 64
       MSYSTEM: MINGW64
@@ -18,14 +18,14 @@ environment:
 install:
   - git submodule update --init
   - rmdir C:\go /s /q
-  - appveyor DownloadFile https://storage.googleapis.com/golang/go1.10.3.windows-%GETH_ARCH%.zip
-  - 7z x go1.10.3.windows-%GETH_ARCH%.zip -y -oC:\ > NUL
+  - appveyor DownloadFile https://storage.googleapis.com/golang/go1.10.3.windows-%EOSC_ARCH%.zip
+  - 7z x go1.10.3.windows-%EOSC_ARCH%.zip -y -oC:\ > NUL
   - go version
   - gcc --version
 
 build_script:
   - go run build\ci.go install
-  - 7z a eosclassic-win64-%APPVEYOR_REPO_TAG_NAME%.zip .\build\bin\geth.exe
+  - 7z a eosc-win64-%APPVEYOR_REPO_TAG_NAME%.zip .\build\bin\eosc.exe
 
 #test_script:
   #- set CGO_ENABLED=1
@@ -33,10 +33,10 @@ build_script:
 
 artifacts:
   - path: '*.zip'
-    name: geth
+    name: eosc
 
 deploy:
-  artifact: /eosclassic-win64-%APPVEYOR_REPO_TAG_NAME%\.zip.*/
+  artifact: /eosc-win64-%APPVEYOR_REPO_TAG_NAME%\.zip.*/
   auth_token:
     secure: dh3IhHCLaCRLabzjT61WVrVRwtzXf0Q7/nNOdvvRzwpS2o4mYdHSn1KP9K1t2G4U
   draft: true

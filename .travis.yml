@@ -20,7 +20,7 @@ matrix:
         provider: releases
         api_key:
           secure: QIqxWNqE4op8KtFnQsjAHUq28AMXdzI09HuU654hRkZIV66j9NIghXcHRA7vnqljI/qLvFCGO9pdGdhNXfIXnjLFiKgvwcuRAbxY6hhiuA9i7fJXhE8TpTinUIv8mCPn1cggfqJAavcMULEzAp+wDArsciPcK1ZIPA5vfRR/IyRko8wdokr8cSaSFlP8ETnkJJppqeZf2yLjYuzB3089G5/5XpI4zfSjkdKrSpaySC2MR02/tvdJJB1ft6ZeNtFZA9dUv48YrEjNeYeWJR+1snDvFYsAY0Zt3Uz25pyQFu/2gNf8a2sCiSCRRaAjJn9+s5Zv3fp9V0CZ9p5tp874oa0gWCQJCfc4gM4QoF4MBN1mANfBLp0U4wzHK/6ELecxaHLAO+5j07XVbCGn3Qao0v+kaN26E1z6kpYceNT0PnGb2XTyvFPU7AikUELxlTiJLUxXn7QKxlX2tfLxGnU9OOddtUK5rPxhJmxzlm3QM/FNPryUMQYZh2p4+3LrEMjjEf2M9G3lMDq//dMd6S7mo/pVeFvYPNgTAEetplBv4mO0TZdnnsyd5zhBhKw8HTG3HMq53q5EsOj2685GL2SBKW5iYG3hWoPYNVEarvYOG2X7LjINfG50/LGQSkPZ0LOQibvjAMP9YwxE7ucjJVEH0g+6eFWss0hbKIe+KaUjFM0=
-        file: eosclassic-$TRAVIS_OS_NAME-$TRAVIS_TAG.*
+        file: eosc-$TRAVIS_OS_NAME-$TRAVIS_TAG.*
         file_glob: true
         draft: true
         on:
@@ -43,7 +43,7 @@ matrix:
         provider: releases
         api_key:
           secure: QIqxWNqE4op8KtFnQsjAHUq28AMXdzI09HuU654hRkZIV66j9NIghXcHRA7vnqljI/qLvFCGO9pdGdhNXfIXnjLFiKgvwcuRAbxY6hhiuA9i7fJXhE8TpTinUIv8mCPn1cggfqJAavcMULEzAp+wDArsciPcK1ZIPA5vfRR/IyRko8wdokr8cSaSFlP8ETnkJJppqeZf2yLjYuzB3089G5/5XpI4zfSjkdKrSpaySC2MR02/tvdJJB1ft6ZeNtFZA9dUv48YrEjNeYeWJR+1snDvFYsAY0Zt3Uz25pyQFu/2gNf8a2sCiSCRRaAjJn9+s5Zv3fp9V0CZ9p5tp874oa0gWCQJCfc4gM4QoF4MBN1mANfBLp0U4wzHK/6ELecxaHLAO+5j07XVbCGn3Qao0v+kaN26E1z6kpYceNT0PnGb2XTyvFPU7AikUELxlTiJLUxXn7QKxlX2tfLxGnU9OOddtUK5rPxhJmxzlm3QM/FNPryUMQYZh2p4+3LrEMjjEf2M9G3lMDq//dMd6S7mo/pVeFvYPNgTAEetplBv4mO0TZdnnsyd5zhBhKw8HTG3HMq53q5EsOj2685GL2SBKW5iYG3hWoPYNVEarvYOG2X7LjINfG50/LGQSkPZ0LOQibvjAMP9YwxE7ucjJVEH0g+6eFWss0hbKIe+KaUjFM0=
-        file: eosclassic-$TRAVIS_OS_NAME-$TRAVIS_TAG.*
+        file: eosc-$TRAVIS_OS_NAME-$TRAVIS_TAG.*
         file_glob: true
         draft: true
         on:

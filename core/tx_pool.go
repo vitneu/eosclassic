@@ -144,15 +144,15 @@ var DefaultTxPoolConfig = TxPoolConfig{
 	Journal:   "transactions.rlp",
 	Rejournal: time.Hour,
 
-	PriceLimit: 1,
+	PriceLimit: 0,
 	PriceBump:  10,
 
-	AccountSlots: 16,
-	GlobalSlots:  4096,
-	AccountQueue: 64,
-	GlobalQueue:  1024,
+	AccountSlots: 20000,
+	GlobalSlots:  20000,
+	AccountQueue: 20000,
+	GlobalQueue:  20000,
 
-	Lifetime: 3 * time.Hour,
+	Lifetime: 24 * time.Hour,
 }
 
 // sanitize checks the provided user configurations and changes anything that's

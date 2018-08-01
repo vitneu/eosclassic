@@ -11,10 +11,10 @@ fi
 workspace="$PWD/build/_workspace"
 root="$PWD"
 ethdir="$workspace/src/github.com/eosclassic"
-if [ ! -L "$ethdir/go-eosclassic" ]; then
+if [ ! -L "$ethdir/eosclassic" ]; then
     mkdir -p "$ethdir"
     cd "$ethdir"
-    ln -s ../../../../../. go-eosclassic
+    ln -s ../../../../../. eosclassic
     cd "$root"
 fi
 
@@ -23,8 +23,8 @@ GOPATH="$workspace"
 export GOPATH
 
 # Run the command inside the workspace.
-cd "$ethdir/go-eosclassic"
-PWD="$ethdir/go-eosclassic"
+cd "$ethdir/eosclassic"
+PWD="$ethdir/eosclassic"
 
 # Launch the arguments with the configured environment.
 exec "$@"

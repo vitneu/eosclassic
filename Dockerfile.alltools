@@ -3,13 +3,13 @@ FROM golang:1.10-alpine as builder
 
 RUN apk add --no-cache make gcc musl-dev linux-headers
 
-ADD . /go-eosclassic
-RUN cd /go-eosclassic && make all
+ADD . /eosclassic
+RUN cd /eosclassic && make all
 
 # Pull all binaries into a second stage deploy alpine container
 FROM alpine:latest
 
 RUN apk add --no-cache ca-certificates
-COPY --from=builder /go-eosclassic/build/bin/* /usr/local/bin/
+COPY --from=builder /eosclassic/build/bin/* /usr/local/bin/
 
 EXPOSE 8282 8546 25252 25252/udp

@@ -26,14 +26,14 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // faucetDockerfile is the Dockerfile required to build a faucet container to
 // grant crypto tokens based on GitHub authentications.
 var faucetDockerfile = `
-FROM eosclassic/go-eosclassic:alltools-latest
+FROM eosclassic/eosclassic:alltools-latest
 
 ADD genesis.json /genesis.json
 ADD account.json /account.json

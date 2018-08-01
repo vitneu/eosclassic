@@ -58,9 +58,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/internal/build"
-	"github.com/eosclassic/go-eosclassic/params"
-	sv "github.com/eosclassic/go-eosclassic/swarm/version"
+	"github.com/eosclassic/eosclassic/internal/build"
+	"github.com/eosclassic/eosclassic/params"
+	sv "github.com/eosclassic/eosclassic/swarm/version"
 )
 
 var (

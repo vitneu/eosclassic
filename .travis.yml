@@ -1,5 +1,5 @@
 language: go
-go_import_path: github.com/eosclassic/go-eosclassic
+go_import_path: github.com/eosclassic/eosclassic
 sudo: false
 matrix:
   include:
@@ -24,7 +24,7 @@ matrix:
         file_glob: true
         draft: true
         on:
-          repo: eosclassic/go-eosclassic
+          repo: eosclassic/eosclassic
           tags: true
         skip_cleanup: true
         tag_name: "$TRAVIS_TAG"
@@ -47,7 +47,7 @@ matrix:
         file_glob: true
         draft: true
         on:
-          repo: eosclassic/go-eosclassic
+          repo: eosclassic/eosclassic
           tags: true
         skip_cleanup: true
         tag_name: "$TRAVIS_TAG"

@@ -2,13 +2,13 @@
 
 Official golang implementation of the EOS Classic protocol.
 
-[![Travis](https://travis-ci.org/eosclassic/go-eosclassic.svg?branch=master)](https://travis-ci.org/eosclassic/go-eosclassic)
+[![Travis](https://travis-ci.org/eosclassic/eosclassic.svg?branch=master)](https://travis-ci.org/eosclassic/eosclassic)
 [![Appveyor](https://ci.appveyor.com/api/projects/status/kj14asyrfkgg8vmn/branch/master?svg=true)](https://ci.appveyor.com/project/eosclassicteam/go-eosclassic/branch/master)
-[![Docker](https://img.shields.io/docker/build/eosclassic/go-eosclassic.svg)](https://hub.docker.com/r/eosclassic/go-eosclassic)
-[![Github All Releases](https://img.shields.io/github/downloads/eosclassic/go-eosclassic/total.svg)](https://github.com/eosclassic/go-eosclassic/releases)
-[![Go Report Card](https://goreportcard.com/badge/github.com/eosclassic/go-eosclassic)](https://goreportcard.com/report/github.com/eosclassic/go-eosclassic)
+[![Docker](https://img.shields.io/docker/build/eosclassic/eosclassic.svg)](https://hub.docker.com/r/eosclassic/eosclassic)
+[![Github All Releases](https://img.shields.io/github/downloads/eosclassic/eosclassic/total.svg)](https://github.com/eosclassic/eosclassic/releases)
+[![Go Report Card](https://goreportcard.com/badge/github.com/eosclassic/eosclassic)](https://goreportcard.com/report/github.com/eosclassic/eosclassic)
 
-Binary archives are published at https://github.com/eosclassic/go-eosclassic/releases/.
+Binary archives are published at https://github.com/eosclassic/eosclassic/releases/.
 
 ## Building the source
 
@@ -24,7 +24,7 @@ or, to build the full suite of utilities:
 
 ## Executables
 
-The go-eosclassic project comes with several wrappers/executables found in the `cmd` directory.
+The eosclassic project comes with several wrappers/executables found in the `cmd` directory.
 
 | Command    | Description |
 |:----------:|-------------|
@@ -82,7 +82,7 @@ One of the quickest ways to get EOS Classic up and running on your machine is by
 ```
 docker run -d --name ethereum-node -v /Users/alice/eosclassic:/root \
            -p 8282:8282 -p 25252:25252 \
-           eosclassic/go-eosclassic
+           eosclassic/eosclassic
 ```
 
 This will start eosc in fast-sync mode with a DB memory allowance of 1GB just as the above command does.  It will also create a persistent volume in your home directory for saving your blockchain as well as map the default ports. There is also an `alpine` tag available for a slim version of the image.

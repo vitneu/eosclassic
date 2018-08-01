@@ -26,13 +26,13 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // nodeDockerfile is the Dockerfile required to run an Ethereum node.
 var nodeDockerfile = `
-FROM eosclassic/go-eosclassic:latest
+FROM eosclassic/eosclassic:latest
 
 ADD genesis.json /genesis.json
 {{if .Unlock}}

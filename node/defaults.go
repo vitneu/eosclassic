@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/p2p/nat"
-	"github.com/eosclassic/go-eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/p2p/nat"
+	"github.com/eosclassic/eosclassic/rpc"
 )
 
 const (

@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/ethdb"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/ethdb"
 )
 
 // Tests that the node iterator indeed walks over the entire database contents.

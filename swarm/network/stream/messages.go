@@ -23,11 +23,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/metrics"
-	"github.com/eosclassic/go-eosclassic/swarm/log"
-	bv "github.com/eosclassic/go-eosclassic/swarm/network/bitvector"
-	"github.com/eosclassic/go-eosclassic/swarm/spancontext"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/metrics"
+	"github.com/eosclassic/eosclassic/swarm/log"
+	bv "github.com/eosclassic/eosclassic/swarm/network/bitvector"
+	"github.com/eosclassic/eosclassic/swarm/spancontext"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 	opentracing "github.com/opentracing/opentracing-go"
 )
 

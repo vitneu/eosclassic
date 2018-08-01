@@ -23,16 +23,16 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/contracts/ens"
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/node"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/swarm/log"
-	"github.com/eosclassic/go-eosclassic/swarm/network"
-	"github.com/eosclassic/go-eosclassic/swarm/pss"
-	"github.com/eosclassic/go-eosclassic/swarm/services/swap"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/contracts/ens"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/node"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/network"
+	"github.com/eosclassic/eosclassic/swarm/pss"
+	"github.com/eosclassic/eosclassic/swarm/services/swap"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 )
 
 const (

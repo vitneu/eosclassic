@@ -26,9 +26,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/accounts"
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/event"
+	"github.com/eosclassic/eosclassic/accounts"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/event"
 )
 
 var testSigData = make([]byte, 32)

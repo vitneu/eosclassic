@@ -30,8 +30,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/accounts/keystore"
-	"github.com/eosclassic/go-eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/accounts/keystore"
+	"github.com/eosclassic/eosclassic/core/types"
 )
 
 // Tests that the account management snippets work correctly.

@@ -19,7 +19,7 @@ package vm
 import (
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 // ContractRef is a reference to the contract's backing object

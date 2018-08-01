@@ -21,7 +21,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/core/vm"
+	"github.com/eosclassic/eosclassic/core/vm"
 )
 
 // Iterator for disassembled EVM instructions

@@ -24,8 +24,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/rlp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

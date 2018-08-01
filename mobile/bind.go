@@ -22,10 +22,10 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/accounts/abi"
-	"github.com/eosclassic/go-eosclassic/accounts/abi/bind"
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/accounts/abi"
+	"github.com/eosclassic/eosclassic/accounts/abi/bind"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
 )
 
 // Signer is an interaface defining the callback when a contract requires a

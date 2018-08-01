@@ -22,9 +22,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/metrics"
-	"github.com/eosclassic/go-eosclassic/swarm/log"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/metrics"
+	"github.com/eosclassic/eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 )
 
 const (

@@ -19,7 +19,7 @@ package network
 import (
 	"testing"
 
-	p2ptest "github.com/eosclassic/go-eosclassic/p2p/testing"
+	p2ptest "github.com/eosclassic/eosclassic/p2p/testing"
 )
 
 /***

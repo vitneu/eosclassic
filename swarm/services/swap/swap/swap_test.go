@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 type testInPayment struct {

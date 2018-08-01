@@ -19,7 +19,7 @@
 package downloader
 
 import (
-	"github.com/eosclassic/go-eosclassic/metrics"
+	"github.com/eosclassic/eosclassic/metrics"
 )
 
 var (

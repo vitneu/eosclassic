@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/swarm/api"
+	"github.com/eosclassic/eosclassic/swarm/api"
 )
 
 const (

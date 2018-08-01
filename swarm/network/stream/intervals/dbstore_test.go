@@ -21,7 +21,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/swarm/state"
+	"github.com/eosclassic/eosclassic/swarm/state"
 )
 
 // TestDBStore tests basic functionality of DBStore.

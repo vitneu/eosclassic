@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 )
 
 const (

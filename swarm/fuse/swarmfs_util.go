@@ -24,7 +24,7 @@ import (
 	"os/exec"
 	"runtime"
 
-	"github.com/eosclassic/go-eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/log"
 )
 
 func externalUnmount(mountPoint string) error {

@@ -21,11 +21,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/swarm/log"
-	"github.com/eosclassic/go-eosclassic/swarm/state"
+	"github.com/eosclassic/eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/state"
 )
 
 /*

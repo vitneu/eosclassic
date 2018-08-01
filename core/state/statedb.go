@@ -23,12 +23,12 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/rlp"
-	"github.com/eosclassic/go-eosclassic/trie"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/trie"
 )
 
 type revision struct {

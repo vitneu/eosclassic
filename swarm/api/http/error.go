@@ -28,10 +28,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/metrics"
-	"github.com/eosclassic/go-eosclassic/swarm/api"
-	l "github.com/eosclassic/go-eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/metrics"
+	"github.com/eosclassic/eosclassic/swarm/api"
+	l "github.com/eosclassic/eosclassic/swarm/log"
 )
 
 //templateMap holds a mapping of an HTTP error code to a template

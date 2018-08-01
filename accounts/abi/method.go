@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/crypto"
 )
 
 // Method represents a callable given a `Name` and whether the method is a constant.

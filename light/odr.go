@@ -22,11 +22,11 @@ import (
 	"context"
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core"
-	"github.com/eosclassic/go-eosclassic/core/rawdb"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/ethdb"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core"
+	"github.com/eosclassic/eosclassic/core/rawdb"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/ethdb"
 )
 
 // NoOdr is the default context passed to an ODR capable function when the ODR

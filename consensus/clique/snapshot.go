@@ -21,10 +21,10 @@ import (
 	"encoding/json"
 	"sort"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/ethdb"
-	"github.com/eosclassic/go-eosclassic/params"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/ethdb"
+	"github.com/eosclassic/eosclassic/params"
 	lru "github.com/hashicorp/golang-lru"
 )
 

@@ -21,11 +21,11 @@ import (
 	"errors"
 	"math"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
-	"github.com/eosclassic/go-eosclassic/consensus/ethash"
-	"github.com/eosclassic/go-eosclassic/core"
-	"github.com/eosclassic/go-eosclassic/params"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/consensus/ethash"
+	"github.com/eosclassic/eosclassic/core"
+	"github.com/eosclassic/eosclassic/params"
 )
 
 // cppEthereumGenesisSpec represents the genesis specification format used by the

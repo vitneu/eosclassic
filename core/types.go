@@ -17,9 +17,9 @@
 package core
 
 import (
-	"github.com/eosclassic/go-eosclassic/core/state"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/core/vm"
+	"github.com/eosclassic/eosclassic/core/state"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/core/vm"
 )
 
 // Validator is an interface which defines the standard for block validation. It

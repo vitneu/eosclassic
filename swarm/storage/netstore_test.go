@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/swarm/network"
+	"github.com/eosclassic/eosclassic/swarm/network"
 )
 
 var (

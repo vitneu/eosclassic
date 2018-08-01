@@ -29,9 +29,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/accounts"
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/accounts"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/crypto"
 	"github.com/pborman/uuid"
 )
 

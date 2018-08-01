@@ -26,8 +26,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/eosclassic/go-eosclassic/swarm/log"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 )
 
 const chunkSize = 4096 // temporary until we implement FileStore in the resourcehandler

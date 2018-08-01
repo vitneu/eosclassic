@@ -20,9 +20,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/discover"
 
-	"github.com/eosclassic/go-eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/p2p"
 )
 
 // PeerEvent is the type of the channel returned by Simulation.PeerEvents.

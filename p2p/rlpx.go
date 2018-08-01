@@ -35,12 +35,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/crypto/ecies"
-	"github.com/eosclassic/go-eosclassic/crypto/secp256k1"
-	"github.com/eosclassic/go-eosclassic/crypto/sha3"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/crypto/ecies"
+	"github.com/eosclassic/eosclassic/crypto/secp256k1"
+	"github.com/eosclassic/eosclassic/crypto/sha3"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/rlp"
 	"github.com/golang/snappy"
 )
 

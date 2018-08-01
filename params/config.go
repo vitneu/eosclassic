@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 // Genesis hashes to enforce below configs on.

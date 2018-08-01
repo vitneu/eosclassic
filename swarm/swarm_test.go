@@ -28,10 +28,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/rpc"
-	"github.com/eosclassic/go-eosclassic/swarm/api"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/swarm/api"
 )
 
 // TestNewSwarm validates Swarm fields in repsect to the provided configuration.

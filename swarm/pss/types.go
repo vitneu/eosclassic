@@ -21,12 +21,12 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/rlp"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
-	whisper "github.com/eosclassic/go-eosclassic/whisper/whisperv5"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/swarm/storage"
+	whisper "github.com/eosclassic/eosclassic/whisper/whisperv5"
 )
 
 const (

@@ -19,9 +19,9 @@ package misc
 import (
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/params"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/params"
 )
 
 // VerifyForkHashes verifies that blocks conforming to network hard-forks do have

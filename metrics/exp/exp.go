@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/metrics"
+	"github.com/eosclassic/eosclassic/metrics"
 )
 
 type exp struct {

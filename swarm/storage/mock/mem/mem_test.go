@@ -19,7 +19,7 @@ package mem
 import (
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/swarm/storage/mock/test"
+	"github.com/eosclassic/eosclassic/swarm/storage/mock/test"
 )
 
 // TestGlobalStore is running test for a GlobalStore

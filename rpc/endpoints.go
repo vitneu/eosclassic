@@ -19,7 +19,7 @@ package rpc
 import (
 	"net"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // StartHTTPEndpoint starts the HTTP RPC endpoint, configured with cors/vhosts/modules

@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/eth/downloader"
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/eth/downloader"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/p2p/discover"
 )
 
 // Tests that fast sync gets disabled as soon as a real block is successfully

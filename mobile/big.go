@@ -22,7 +22,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 // A BigInt represents a signed multi-precision integer.

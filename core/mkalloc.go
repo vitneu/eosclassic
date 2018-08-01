@@ -34,8 +34,8 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/eosclassic/go-eosclassic/core"
-	"github.com/eosclassic/go-eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/core"
+	"github.com/eosclassic/eosclassic/rlp"
 )
 
 type allocItem struct{ Addr, Balance *big.Int }

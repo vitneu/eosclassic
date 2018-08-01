@@ -26,10 +26,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/swarm/log"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 )
 
 func testAPI(t *testing.T, f func(*API, bool)) {

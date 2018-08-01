@@ -24,7 +24,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/core/types"
 )
 
 // Tests that ethash works correctly in test mode.

@@ -23,8 +23,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/core"
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/core"
+	"github.com/eosclassic/eosclassic/log"
 	"github.com/olekukonko/tablewriter"
 )
 

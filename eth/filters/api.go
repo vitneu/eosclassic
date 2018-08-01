@@ -25,13 +25,13 @@ import (
 	"sync"
 	"time"
 
-	ethereum "github.com/eosclassic/go-eosclassic"
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/ethdb"
-	"github.com/eosclassic/go-eosclassic/event"
-	"github.com/eosclassic/go-eosclassic/rpc"
+	ethereum "github.com/eosclassic/eosclassic"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/ethdb"
+	"github.com/eosclassic/eosclassic/event"
+	"github.com/eosclassic/eosclassic/rpc"
 )
 
 var (

@@ -23,12 +23,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/rawdb"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/ethdb"
-	"github.com/eosclassic/go-eosclassic/event"
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/rawdb"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/ethdb"
+	"github.com/eosclassic/eosclassic/event"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // ChainIndexerBackend defines the methods needed to process chain segments in

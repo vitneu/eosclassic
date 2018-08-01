@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 // reads the integer based on its kind

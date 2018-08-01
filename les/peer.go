@@ -26,13 +26,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/eth"
-	"github.com/eosclassic/go-eosclassic/les/flowcontrol"
-	"github.com/eosclassic/go-eosclassic/light"
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/eth"
+	"github.com/eosclassic/eosclassic/les/flowcontrol"
+	"github.com/eosclassic/eosclassic/light"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/rlp"
 )
 
 var (

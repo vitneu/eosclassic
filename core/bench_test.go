@@ -23,15 +23,15 @@ import (
 	"os"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/common/math"
-	"github.com/eosclassic/go-eosclassic/consensus/ethash"
-	"github.com/eosclassic/go-eosclassic/core/rawdb"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/core/vm"
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/ethdb"
-	"github.com/eosclassic/go-eosclassic/params"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/common/math"
+	"github.com/eosclassic/eosclassic/consensus/ethash"
+	"github.com/eosclassic/eosclassic/core/rawdb"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/core/vm"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/ethdb"
+	"github.com/eosclassic/eosclassic/params"
 )
 
 func BenchmarkInsertChain_empty_memdb(b *testing.B) {

@@ -23,13 +23,13 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/eosclassic/go-eosclassic/consensus/ethash"
-	"github.com/eosclassic/go-eosclassic/core"
-	"github.com/eosclassic/go-eosclassic/core/state"
-	"github.com/eosclassic/go-eosclassic/core/vm"
-	"github.com/eosclassic/go-eosclassic/ethdb"
-	"github.com/eosclassic/go-eosclassic/params"
-	"github.com/eosclassic/go-eosclassic/trie"
+	"github.com/eosclassic/eosclassic/consensus/ethash"
+	"github.com/eosclassic/eosclassic/core"
+	"github.com/eosclassic/eosclassic/core/state"
+	"github.com/eosclassic/eosclassic/core/vm"
+	"github.com/eosclassic/eosclassic/ethdb"
+	"github.com/eosclassic/eosclassic/params"
+	"github.com/eosclassic/eosclassic/trie"
 )
 
 func TestNodeIterator(t *testing.T) {

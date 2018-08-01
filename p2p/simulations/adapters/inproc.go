@@ -23,13 +23,13 @@ import (
 	"net"
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/event"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/node"
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/p2p/simulations/pipes"
-	"github.com/eosclassic/go-eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/event"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/node"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/simulations/pipes"
+	"github.com/eosclassic/eosclassic/rpc"
 )
 
 // SimAdapter is a NodeAdapter which creates in-memory simulation nodes and

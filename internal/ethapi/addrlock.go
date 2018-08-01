@@ -19,7 +19,7 @@ package ethapi
 import (
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 type AddrLocker struct {

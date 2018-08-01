@@ -21,9 +21,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/swarm/storage/encryption"
+	"github.com/eosclassic/eosclassic/swarm/storage/encryption"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 func TestHasherStore(t *testing.T) {

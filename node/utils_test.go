@@ -22,8 +22,8 @@ package node
 import (
 	"reflect"
 
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/rpc"
 )
 
 // NoopService is a trivial implementation of the Service interface.

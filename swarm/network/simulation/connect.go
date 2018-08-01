@@ -19,7 +19,7 @@ package simulation
 import (
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/discover"
 )
 
 // ConnectToPivotNode connects the node with provided NodeID

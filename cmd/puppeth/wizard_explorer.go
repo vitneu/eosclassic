@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // deployExplorer creates a new block explorer based on some user input.

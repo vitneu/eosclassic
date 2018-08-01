@@ -20,9 +20,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/ethdb"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/ethdb"
 )
 
 // Tests that positional lookup metadata can be stored and retrieved.

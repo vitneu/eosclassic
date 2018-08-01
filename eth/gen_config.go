@@ -5,12 +5,12 @@ package eth
 import (
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
-	"github.com/eosclassic/go-eosclassic/consensus/ethash"
-	"github.com/eosclassic/go-eosclassic/core"
-	"github.com/eosclassic/go-eosclassic/eth/downloader"
-	"github.com/eosclassic/go-eosclassic/eth/gasprice"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/consensus/ethash"
+	"github.com/eosclassic/eosclassic/core"
+	"github.com/eosclassic/eosclassic/eth/downloader"
+	"github.com/eosclassic/eosclassic/eth/gasprice"
 )
 
 var _ = (*configMarshaling)(nil)

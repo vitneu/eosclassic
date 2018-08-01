@@ -25,15 +25,15 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
-	"github.com/eosclassic/go-eosclassic/common/math"
-	"github.com/eosclassic/go-eosclassic/core"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/core/vm"
-	"github.com/eosclassic/go-eosclassic/ethdb"
-	"github.com/eosclassic/go-eosclassic/rlp"
-	"github.com/eosclassic/go-eosclassic/tests"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/common/math"
+	"github.com/eosclassic/eosclassic/core"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/core/vm"
+	"github.com/eosclassic/eosclassic/ethdb"
+	"github.com/eosclassic/eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/tests"
 )
 
 // To generate a new callTracer test, copy paste the makeTest method below into

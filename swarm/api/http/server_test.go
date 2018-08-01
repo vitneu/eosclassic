@@ -33,15 +33,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/swarm/api"
-	swarm "github.com/eosclassic/go-eosclassic/swarm/api/client"
-	"github.com/eosclassic/go-eosclassic/swarm/multihash"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
-	"github.com/eosclassic/go-eosclassic/swarm/storage/mru"
-	"github.com/eosclassic/go-eosclassic/swarm/testutil"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/swarm/api"
+	swarm "github.com/eosclassic/eosclassic/swarm/api/client"
+	"github.com/eosclassic/eosclassic/swarm/multihash"
+	"github.com/eosclassic/eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/swarm/storage/mru"
+	"github.com/eosclassic/eosclassic/swarm/testutil"
 )
 
 func init() {

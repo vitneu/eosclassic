@@ -29,7 +29,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/params"
+	"github.com/eosclassic/eosclassic/params"
 )
 
 var (

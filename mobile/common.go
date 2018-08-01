@@ -24,7 +24,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 // Hash represents the 32 byte Keccak256 hash of arbitrary data.

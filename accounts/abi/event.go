@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/crypto"
 )
 
 // Event is an event potentially triggered by the EVM's LOG mechanism. The Event

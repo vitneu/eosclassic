@@ -25,14 +25,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/p2p/protocols"
-	"github.com/eosclassic/go-eosclassic/rlp"
-	"github.com/eosclassic/go-eosclassic/rpc"
-	"github.com/eosclassic/go-eosclassic/swarm/log"
-	"github.com/eosclassic/go-eosclassic/swarm/pss"
+	"github.com/eosclassic/eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/protocols"
+	"github.com/eosclassic/eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/pss"
 )
 
 const (

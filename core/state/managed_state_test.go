@@ -19,8 +19,8 @@ package state
 import (
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/ethdb"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/ethdb"
 )
 
 var addr = common.BytesToAddress([]byte("test"))

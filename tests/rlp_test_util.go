@@ -24,7 +24,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/rlp"
 )
 
 // RLPTest is the JSON structure of a single RLP test.

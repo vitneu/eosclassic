@@ -27,9 +27,9 @@ import (
 	"io"
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/crypto/sha3"
-	"github.com/eosclassic/go-eosclassic/swarm/bmt"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/crypto/sha3"
+	"github.com/eosclassic/eosclassic/swarm/bmt"
 )
 
 const MaxPO = 16

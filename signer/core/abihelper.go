@@ -22,8 +22,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/accounts/abi"
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/accounts/abi"
+	"github.com/eosclassic/eosclassic/common"
 
 	"bytes"
 	"os"

@@ -25,13 +25,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/node"
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/p2p/simulations"
-	"github.com/eosclassic/go-eosclassic/p2p/simulations/adapters"
-	"github.com/eosclassic/go-eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/node"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/simulations"
+	"github.com/eosclassic/eosclassic/p2p/simulations/adapters"
+	"github.com/eosclassic/eosclassic/rpc"
 )
 
 var adapterType = flag.String("adapter", "sim", `node adapter to use (one of "sim", "exec" or "docker")`)

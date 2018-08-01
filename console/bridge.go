@@ -23,9 +23,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/accounts/usbwallet"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/accounts/usbwallet"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/rpc"
 	"github.com/robertkrimen/otto"
 )
 

@@ -28,12 +28,12 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/accounts"
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/accounts"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/rlp"
 )
 
 // ledgerOpcode is an enumeration encoding the supported Ledger opcodes.

@@ -25,7 +25,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 const (

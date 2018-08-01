@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/common/hexutil"
 )
 
 type MyType [5]byte

@@ -21,11 +21,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/rpc"
-	"github.com/eosclassic/go-eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/swarm/log"
 )
 
 // Wrapper for receiving pss messages when using the pss API

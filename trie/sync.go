@@ -20,8 +20,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/ethdb"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/ethdb"
 	"gopkg.in/karalabe/cookiejar.v2/collections/prque"
 )
 

@@ -24,9 +24,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/p2p/netutil"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/netutil"
 )
 
 const (

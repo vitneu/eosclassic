@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/params"
+	"github.com/eosclassic/eosclassic/params"
 )
 
 const (

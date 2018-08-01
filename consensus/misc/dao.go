@@ -21,9 +21,9 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/core/state"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/params"
+	"github.com/eosclassic/eosclassic/core/state"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/params"
 )
 
 var (

@@ -24,11 +24,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/event"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/p2p/simulations/adapters"
+	"github.com/eosclassic/eosclassic/event"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/simulations/adapters"
 )
 
 var DialBanTimeout = 200 * time.Millisecond

@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/common/mclock"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/common/mclock"
 )
 
 func TestTopicRadius(t *testing.T) {

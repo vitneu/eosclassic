@@ -29,7 +29,7 @@ import (
 	"net"
 	"sort"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 const (

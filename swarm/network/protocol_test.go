@@ -23,11 +23,11 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/p2p/protocols"
-	p2ptest "github.com/eosclassic/go-eosclassic/p2p/testing"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/protocols"
+	p2ptest "github.com/eosclassic/eosclassic/p2p/testing"
 )
 
 var (

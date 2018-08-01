@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/eosclassic/go-eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/log"
 )
 
 /*
@@ -29,8 +29,8 @@ see https://github.com/ethereum/go-ethereum/issues/2040
 Usage:
 
 import (
- "github.com/eosclassic/go-eosclassic/common/httpclient"
- "github.com/eosclassic/go-eosclassic/swarm/api/http"
+ "github.com/eosclassic/eosclassic/common/httpclient"
+ "github.com/eosclassic/eosclassic/swarm/api/http"
 )
 client := httpclient.New()
 // for (private) swarm proxy running locally

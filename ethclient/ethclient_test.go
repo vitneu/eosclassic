@@ -16,7 +16,7 @@
 
 package ethclient
 
-import "github.com/eosclassic/go-eosclassic"
+import "github.com/eosclassic/eosclassic"
 
 // Verify that Client implements the ethereum interfaces.
 var (

@@ -17,7 +17,7 @@
 package mru
 
 import (
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 )
 
 // updateHeader models the non-payload components of a Resource Update

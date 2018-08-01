@@ -19,9 +19,9 @@ package state
 import (
 	"bytes"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/rlp"
-	"github.com/eosclassic/go-eosclassic/trie"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/trie"
 )
 
 // NewStateSync create a new state trie download scheduler.

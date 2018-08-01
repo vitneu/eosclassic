@@ -21,11 +21,11 @@ import (
 
 	"encoding/json"
 
-	"github.com/eosclassic/go-eosclassic/accounts"
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
-	"github.com/eosclassic/go-eosclassic/internal/ethapi"
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/accounts"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/internal/ethapi"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 type AuditLogger struct {

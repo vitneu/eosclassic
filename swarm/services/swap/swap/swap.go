@@ -22,7 +22,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/log"
 )
 
 // SwAP Swarm Accounting Protocol with

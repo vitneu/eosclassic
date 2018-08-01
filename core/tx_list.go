@@ -22,9 +22,9 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // nonceHeap is a heap.Interface implementation over 64bit unsigned integers for

@@ -34,7 +34,7 @@ import (
 	"io"
 	"sort"
 
-	"github.com/eosclassic/go-eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/rlp"
 )
 
 const SizeLimit = 300 // maximum encoded size of a node record in bytes

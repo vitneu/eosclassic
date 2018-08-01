@@ -20,9 +20,9 @@ import (
 	"context"
 	"sync"
 
-	ethereum "github.com/eosclassic/go-eosclassic"
-	"github.com/eosclassic/go-eosclassic/event"
-	"github.com/eosclassic/go-eosclassic/rpc"
+	ethereum "github.com/eosclassic/eosclassic"
+	"github.com/eosclassic/eosclassic/event"
+	"github.com/eosclassic/eosclassic/rpc"
 )
 
 // PublicDownloaderAPI provides an API which gives information about the current synchronisation status.

@@ -25,13 +25,13 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/swarm/api"
-	swarmhttp "github.com/eosclassic/go-eosclassic/swarm/api/http"
-	"github.com/eosclassic/go-eosclassic/swarm/multihash"
-	"github.com/eosclassic/go-eosclassic/swarm/storage/mru"
-	"github.com/eosclassic/go-eosclassic/swarm/testutil"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/swarm/api"
+	swarmhttp "github.com/eosclassic/eosclassic/swarm/api/http"
+	"github.com/eosclassic/eosclassic/swarm/multihash"
+	"github.com/eosclassic/eosclassic/swarm/storage/mru"
+	"github.com/eosclassic/eosclassic/swarm/testutil"
 )
 
 func serverFunc(api *api.API) testutil.TestServer {

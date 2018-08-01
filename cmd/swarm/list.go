@@ -22,8 +22,8 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/eosclassic/go-eosclassic/cmd/utils"
-	swarm "github.com/eosclassic/go-eosclassic/swarm/api/client"
+	"github.com/eosclassic/eosclassic/cmd/utils"
+	swarm "github.com/eosclassic/eosclassic/swarm/api/client"
 	"gopkg.in/urfave/cli.v1"
 )
 

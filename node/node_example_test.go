@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/eosclassic/go-eosclassic/node"
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/node"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/rpc"
 )
 
 // SampleService is a trivial network service that can be attached to a node for

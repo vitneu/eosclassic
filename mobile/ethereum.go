@@ -21,8 +21,8 @@ package geth
 import (
 	"errors"
 
-	ethereum "github.com/eosclassic/go-eosclassic"
-	"github.com/eosclassic/go-eosclassic/common"
+	ethereum "github.com/eosclassic/eosclassic"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 // Subscription represents an event subscription where events are

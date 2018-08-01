@@ -27,7 +27,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/swarm"
+	"github.com/eosclassic/eosclassic/swarm"
 )
 
 // TestCLISwarmExportImport perform the following test:

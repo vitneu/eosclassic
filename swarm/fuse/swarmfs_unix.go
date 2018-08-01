@@ -30,9 +30,9 @@ import (
 
 	"bazil.org/fuse"
 	"bazil.org/fuse/fs"
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/swarm/api"
-	"github.com/eosclassic/go-eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/swarm/api"
+	"github.com/eosclassic/eosclassic/swarm/log"
 )
 
 var (

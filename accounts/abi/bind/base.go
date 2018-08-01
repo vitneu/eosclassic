@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic"
-	"github.com/eosclassic/go-eosclassic/accounts/abi"
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/event"
+	"github.com/eosclassic/eosclassic"
+	"github.com/eosclassic/eosclassic/accounts/abi"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/event"
 )
 
 // SignerFn is a signer function callback when a contract requires a method to

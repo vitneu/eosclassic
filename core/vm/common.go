@@ -19,8 +19,8 @@ package vm
 import (
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/common/math"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/common/math"
 )
 
 // calculates the memory size required for a step

@@ -22,8 +22,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/common/math"
-	"github.com/eosclassic/go-eosclassic/core/vm"
+	"github.com/eosclassic/eosclassic/common/math"
+	"github.com/eosclassic/eosclassic/core/vm"
 )
 
 // Compiler contains information about the parsed source

@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 // precompiledTest defines the input/output pairs for precompiled contract tests.

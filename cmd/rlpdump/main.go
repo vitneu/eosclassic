@@ -26,7 +26,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/rlp"
 )
 
 var (

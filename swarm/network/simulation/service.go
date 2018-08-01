@@ -17,9 +17,9 @@
 package simulation
 
 import (
-	"github.com/eosclassic/go-eosclassic/node"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/p2p/simulations/adapters"
+	"github.com/eosclassic/eosclassic/node"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/simulations/adapters"
 )
 
 // Service returns a single Service by name on a particular node

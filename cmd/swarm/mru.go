@@ -22,11 +22,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/common/hexutil"
 
-	"github.com/eosclassic/go-eosclassic/cmd/utils"
-	swarm "github.com/eosclassic/go-eosclassic/swarm/api/client"
-	"github.com/eosclassic/go-eosclassic/swarm/storage/mru"
+	"github.com/eosclassic/eosclassic/cmd/utils"
+	swarm "github.com/eosclassic/eosclassic/swarm/api/client"
+	"github.com/eosclassic/eosclassic/swarm/storage/mru"
 	"gopkg.in/urfave/cli.v1"
 )
 

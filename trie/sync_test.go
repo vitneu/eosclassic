@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/ethdb"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/ethdb"
 )
 
 // makeTestTrie create a sample test trie to test node-wise reconstruction.

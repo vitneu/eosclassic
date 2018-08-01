@@ -17,7 +17,7 @@
 package api
 
 import (
-	"github.com/eosclassic/go-eosclassic/swarm/network"
+	"github.com/eosclassic/eosclassic/swarm/network"
 )
 
 type Control struct {

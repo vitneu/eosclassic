@@ -20,8 +20,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/accounts/keystore"
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/accounts/keystore"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // deployFaucet queries the user for various input on deploying a faucet, after

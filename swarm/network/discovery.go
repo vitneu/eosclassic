@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/swarm/pot"
+	"github.com/eosclassic/eosclassic/swarm/pot"
 )
 
 // discovery bzz extension for requesting and relaying node address records

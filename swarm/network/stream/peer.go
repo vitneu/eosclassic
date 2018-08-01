@@ -22,14 +22,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/metrics"
-	"github.com/eosclassic/go-eosclassic/p2p/protocols"
-	"github.com/eosclassic/go-eosclassic/swarm/log"
-	pq "github.com/eosclassic/go-eosclassic/swarm/network/priorityqueue"
-	"github.com/eosclassic/go-eosclassic/swarm/network/stream/intervals"
-	"github.com/eosclassic/go-eosclassic/swarm/spancontext"
-	"github.com/eosclassic/go-eosclassic/swarm/state"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/metrics"
+	"github.com/eosclassic/eosclassic/p2p/protocols"
+	"github.com/eosclassic/eosclassic/swarm/log"
+	pq "github.com/eosclassic/eosclassic/swarm/network/priorityqueue"
+	"github.com/eosclassic/eosclassic/swarm/network/stream/intervals"
+	"github.com/eosclassic/eosclassic/swarm/spancontext"
+	"github.com/eosclassic/eosclassic/swarm/state"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 	opentracing "github.com/opentracing/opentracing-go"
 )
 

@@ -19,7 +19,7 @@ package p2p
 import (
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/discover"
 )
 
 // Protocol represents a P2P subprotocol implementation.

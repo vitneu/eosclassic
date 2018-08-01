@@ -23,14 +23,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/node"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/p2p/simulations/adapters"
-	"github.com/eosclassic/go-eosclassic/swarm/log"
-	"github.com/eosclassic/go-eosclassic/swarm/network"
-	"github.com/eosclassic/go-eosclassic/swarm/network/simulation"
-	"github.com/eosclassic/go-eosclassic/swarm/state"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/node"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/simulations/adapters"
+	"github.com/eosclassic/eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/network"
+	"github.com/eosclassic/eosclassic/swarm/network/simulation"
+	"github.com/eosclassic/eosclassic/swarm/state"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 )
 
 //constants for random file generation

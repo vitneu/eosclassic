@@ -21,11 +21,11 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/event"
-	"github.com/eosclassic/go-eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/event"
+	"github.com/eosclassic/eosclassic/rlp"
 )
 
 // Constants to match up protocol versions and messages

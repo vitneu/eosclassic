@@ -22,10 +22,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/eosclassic/go-eosclassic/cmd/utils"
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/cmd/utils"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 	"gopkg.in/urfave/cli.v1"
 )
 

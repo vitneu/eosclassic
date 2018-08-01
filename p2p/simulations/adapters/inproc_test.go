@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/p2p/simulations/pipes"
+	"github.com/eosclassic/eosclassic/p2p/simulations/pipes"
 )
 
 func TestTCPPipe(t *testing.T) {

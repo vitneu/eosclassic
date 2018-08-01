@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/eosclassic/go-eosclassic/cmd/evm/internal/compiler"
+	"github.com/eosclassic/eosclassic/cmd/evm/internal/compiler"
 
 	cli "gopkg.in/urfave/cli.v1"
 )

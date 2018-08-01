@@ -24,8 +24,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/accounts/abi/bind"
-	"github.com/eosclassic/go-eosclassic/common/compiler"
+	"github.com/eosclassic/eosclassic/accounts/abi/bind"
+	"github.com/eosclassic/eosclassic/common/compiler"
 )
 
 var (

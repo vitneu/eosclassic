@@ -19,7 +19,7 @@ package state
 import (
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 type account struct {

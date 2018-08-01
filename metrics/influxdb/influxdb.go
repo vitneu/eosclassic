@@ -5,8 +5,8 @@ import (
 	uurl "net/url"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/metrics"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/metrics"
 	"github.com/influxdata/influxdb/client"
 )
 

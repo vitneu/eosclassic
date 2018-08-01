@@ -19,8 +19,8 @@ package les
 import (
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
 )
 
 type ltrInfo struct {

@@ -19,7 +19,7 @@ package downloader
 import (
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/core/types"
 )
 
 // peerDropFn is a callback type for dropping a peer detected as malicious.

@@ -27,14 +27,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/p2p/simulations"
-	"github.com/eosclassic/go-eosclassic/p2p/simulations/adapters"
-	"github.com/eosclassic/go-eosclassic/rpc"
-	"github.com/eosclassic/go-eosclassic/swarm/log"
-	"github.com/eosclassic/go-eosclassic/swarm/network"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/simulations"
+	"github.com/eosclassic/eosclassic/p2p/simulations/adapters"
+	"github.com/eosclassic/eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/network"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 )
 
 type Simulation struct {

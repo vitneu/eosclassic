@@ -19,10 +19,10 @@ package shhclient
 import (
 	"context"
 
-	"github.com/eosclassic/go-eosclassic"
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
-	"github.com/eosclassic/go-eosclassic/rpc"
-	whisper "github.com/eosclassic/go-eosclassic/whisper/whisperv6"
+	"github.com/eosclassic/eosclassic"
+	"github.com/eosclassic/eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/rpc"
+	whisper "github.com/eosclassic/eosclassic/whisper/whisperv6"
 )
 
 // Client defines typed wrappers for the Whisper v6 RPC API.

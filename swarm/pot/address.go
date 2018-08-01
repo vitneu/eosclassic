@@ -24,7 +24,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 var (

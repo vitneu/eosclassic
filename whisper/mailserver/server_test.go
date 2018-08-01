@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/crypto"
-	whisper "github.com/eosclassic/go-eosclassic/whisper/whisperv6"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/crypto"
+	whisper "github.com/eosclassic/eosclassic/whisper/whisperv6"
 )
 
 const powRequirement = 0.00001

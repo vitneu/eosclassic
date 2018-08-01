@@ -23,11 +23,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/node"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/p2p/simulations"
-	"github.com/eosclassic/go-eosclassic/p2p/simulations/adapters"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/node"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/simulations"
+	"github.com/eosclassic/eosclassic/p2p/simulations/adapters"
 )
 
 // Common errors that are returned by functions in this package.

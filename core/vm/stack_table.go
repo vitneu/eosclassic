@@ -19,7 +19,7 @@ package vm
 import (
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/params"
+	"github.com/eosclassic/eosclassic/params"
 )
 
 func makeStackFunc(pop, push int) stackValidationFunc {

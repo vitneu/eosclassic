@@ -20,7 +20,7 @@ import (
 	"html/template"
 	"path"
 
-	"github.com/eosclassic/go-eosclassic/swarm/api"
+	"github.com/eosclassic/eosclassic/swarm/api"
 )
 
 type htmlListData struct {

@@ -21,7 +21,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 )
 
 const (

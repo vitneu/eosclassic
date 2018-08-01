@@ -19,7 +19,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // deployDashboard queries the user for various input on deploying a web-service

@@ -21,7 +21,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/common/hexutil"
 )
 
 // Tests that data bitset encoding and decoding works and is bijective.

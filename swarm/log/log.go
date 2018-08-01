@@ -1,8 +1,8 @@
 package log
 
 import (
-	l "github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/metrics"
+	l "github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/metrics"
 )
 
 const (

@@ -23,9 +23,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/swarm/api"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
-	"github.com/eosclassic/go-eosclassic/swarm/storage/mru"
+	"github.com/eosclassic/eosclassic/swarm/api"
+	"github.com/eosclassic/eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/swarm/storage/mru"
 )
 
 type TestServer interface {

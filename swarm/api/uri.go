@@ -22,8 +22,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 )
 
 //matches hex swarm hashes

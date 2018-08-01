@@ -36,7 +36,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 // ErrNotFound indicates that the chunk is not found.

@@ -23,9 +23,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/p2p/protocols"
-	"github.com/eosclassic/go-eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/p2p/protocols"
+	"github.com/eosclassic/eosclassic/swarm/log"
 )
 
 // Generic ping protocol implementation for

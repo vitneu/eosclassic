@@ -27,12 +27,12 @@ import (
 
 	cli "gopkg.in/urfave/cli.v1"
 
-	"github.com/eosclassic/go-eosclassic/cmd/utils"
-	"github.com/eosclassic/go-eosclassic/dashboard"
-	"github.com/eosclassic/go-eosclassic/eth"
-	"github.com/eosclassic/go-eosclassic/node"
-	"github.com/eosclassic/go-eosclassic/params"
-	whisper "github.com/eosclassic/go-eosclassic/whisper/whisperv6"
+	"github.com/eosclassic/eosclassic/cmd/utils"
+	"github.com/eosclassic/eosclassic/dashboard"
+	"github.com/eosclassic/eosclassic/eth"
+	"github.com/eosclassic/eosclassic/node"
+	"github.com/eosclassic/eosclassic/params"
+	whisper "github.com/eosclassic/eosclassic/whisper/whisperv6"
 	"github.com/naoina/toml"
 )
 

@@ -22,7 +22,7 @@ package storage
 import (
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/metrics"
+	"github.com/eosclassic/eosclassic/metrics"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/iterator"
 	"github.com/syndtr/goleveldb/leveldb/opt"

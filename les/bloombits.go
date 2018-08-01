@@ -19,8 +19,8 @@ package les
 import (
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common/bitutil"
-	"github.com/eosclassic/go-eosclassic/light"
+	"github.com/eosclassic/eosclassic/common/bitutil"
+	"github.com/eosclassic/eosclassic/light"
 )
 
 const (

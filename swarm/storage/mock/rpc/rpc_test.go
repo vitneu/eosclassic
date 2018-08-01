@@ -19,9 +19,9 @@ package rpc
 import (
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/rpc"
-	"github.com/eosclassic/go-eosclassic/swarm/storage/mock/mem"
-	"github.com/eosclassic/go-eosclassic/swarm/storage/mock/test"
+	"github.com/eosclassic/eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/swarm/storage/mock/mem"
+	"github.com/eosclassic/eosclassic/swarm/storage/mock/test"
 )
 
 // TestDBStore is running test for a GlobalStore

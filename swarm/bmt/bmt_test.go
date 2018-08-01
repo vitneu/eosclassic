@@ -28,7 +28,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/crypto/sha3"
+	"github.com/eosclassic/eosclassic/crypto/sha3"
 )
 
 // the actual data length generated (could be longer than max datalength of the BMT)

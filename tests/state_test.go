@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/core/vm"
+	"github.com/eosclassic/eosclassic/core/vm"
 )
 
 func TestState(t *testing.T) {

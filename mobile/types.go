@@ -23,9 +23,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/rlp"
 )
 
 // A Nonce is a 64-bit hash which proves (combined with the mix-hash) that

@@ -6,12 +6,12 @@ package contract
 import (
 	"strings"
 
-	ethereum "github.com/eosclassic/go-eosclassic"
-	"github.com/eosclassic/go-eosclassic/accounts/abi"
-	"github.com/eosclassic/go-eosclassic/accounts/abi/bind"
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/event"
+	ethereum "github.com/eosclassic/eosclassic"
+	"github.com/eosclassic/eosclassic/accounts/abi"
+	"github.com/eosclassic/eosclassic/accounts/abi/bind"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/event"
 )
 
 // ENSABI is the input ABI used to generate the binding from.

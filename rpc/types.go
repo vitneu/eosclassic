@@ -24,7 +24,7 @@ import (
 	"sync"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/common/hexutil"
 )
 
 // API describes the set of methods offered over the RPC interface

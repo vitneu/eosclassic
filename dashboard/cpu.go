@@ -21,7 +21,7 @@ package dashboard
 import (
 	"syscall"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // getProcessCPUTime retrieves the process' CPU time since program startup.

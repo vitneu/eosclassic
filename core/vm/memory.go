@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/common/math"
+	"github.com/eosclassic/eosclassic/common/math"
 )
 
 // Memory implements a simple memory model for the ethereum virtual machine.

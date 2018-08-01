@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // deployEthstats queries the user for various input on deploying an ethstats

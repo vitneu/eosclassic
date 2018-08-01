@@ -27,15 +27,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/node"
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/p2p/simulations/adapters"
-	p2ptest "github.com/eosclassic/go-eosclassic/p2p/testing"
-	"github.com/eosclassic/go-eosclassic/swarm/log"
-	"github.com/eosclassic/go-eosclassic/swarm/network"
-	"github.com/eosclassic/go-eosclassic/swarm/network/simulation"
-	"github.com/eosclassic/go-eosclassic/swarm/state"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/node"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/p2p/simulations/adapters"
+	p2ptest "github.com/eosclassic/eosclassic/p2p/testing"
+	"github.com/eosclassic/eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/network"
+	"github.com/eosclassic/eosclassic/swarm/network/simulation"
+	"github.com/eosclassic/eosclassic/swarm/state"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 )
 
 func TestStreamerRetrieveRequest(t *testing.T) {

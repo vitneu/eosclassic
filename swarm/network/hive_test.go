@@ -22,8 +22,8 @@ import (
 	"os"
 	"testing"
 
-	p2ptest "github.com/eosclassic/go-eosclassic/p2p/testing"
-	"github.com/eosclassic/go-eosclassic/swarm/state"
+	p2ptest "github.com/eosclassic/eosclassic/p2p/testing"
+	"github.com/eosclassic/eosclassic/swarm/state"
 )
 
 func newHiveTester(t *testing.T, params *HiveParams, n int, store state.Store) (*bzzTester, *Hive) {

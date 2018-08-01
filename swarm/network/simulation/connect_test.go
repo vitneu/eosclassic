@@ -19,7 +19,7 @@ package simulation
 import (
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/discover"
 )
 
 func TestConnectToPivotNode(t *testing.T) {

@@ -25,10 +25,10 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/params"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/params"
 )
 
 // makeGenesis creates a new genesis struct based on some user input.

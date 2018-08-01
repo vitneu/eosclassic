@@ -22,12 +22,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/internal/ethapi"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/signer/core"
-	"github.com/eosclassic/go-eosclassic/signer/rules/deps"
-	"github.com/eosclassic/go-eosclassic/signer/storage"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/internal/ethapi"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/signer/core"
+	"github.com/eosclassic/eosclassic/signer/rules/deps"
+	"github.com/eosclassic/eosclassic/signer/storage"
 	"github.com/robertkrimen/otto"
 )
 

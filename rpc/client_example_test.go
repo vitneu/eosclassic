@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/rpc"
 )
 
 // In this example, our client whishes to track the latest 'block number'

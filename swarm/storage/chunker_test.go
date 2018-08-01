@@ -26,7 +26,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/crypto/sha3"
+	"github.com/eosclassic/eosclassic/crypto/sha3"
 )
 
 /*

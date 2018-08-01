@@ -21,13 +21,13 @@ import (
 	"errors"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/metrics"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/swarm/log"
-	"github.com/eosclassic/go-eosclassic/swarm/network"
-	"github.com/eosclassic/go-eosclassic/swarm/spancontext"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/metrics"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/network"
+	"github.com/eosclassic/eosclassic/swarm/spancontext"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 	opentracing "github.com/opentracing/opentracing-go"
 )
 

@@ -26,8 +26,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
-	"github.com/eosclassic/go-eosclassic/crypto/sha3"
+	"github.com/eosclassic/eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/crypto/sha3"
 )
 
 // Lengths of hashes and addresses in bytes.

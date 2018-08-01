@@ -19,10 +19,10 @@ package rawdb
 import (
 	"encoding/json"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/params"
-	"github.com/eosclassic/go-eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/params"
+	"github.com/eosclassic/eosclassic/rlp"
 )
 
 // ReadDatabaseVersion retrieves the version number of the database.

@@ -20,9 +20,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/core/rawdb"
-	"github.com/eosclassic/go-eosclassic/eth/downloader"
-	"github.com/eosclassic/go-eosclassic/light"
+	"github.com/eosclassic/eosclassic/core/rawdb"
+	"github.com/eosclassic/eosclassic/eth/downloader"
+	"github.com/eosclassic/eosclassic/light"
 )
 
 // syncer is responsible for periodically synchronising with the network, both

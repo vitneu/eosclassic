@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/common/math"
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/crypto/sha3"
-	"github.com/eosclassic/go-eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/common/math"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/crypto/sha3"
+	"github.com/eosclassic/eosclassic/rlp"
 )
 
 // Registry of known identity schemes.

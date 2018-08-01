@@ -23,7 +23,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/swarm/storage/mock/test"
+	"github.com/eosclassic/eosclassic/swarm/storage/mock/test"
 )
 
 // TestDBStore is running a test.MockStore tests

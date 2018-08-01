@@ -19,7 +19,7 @@ package vm
 import (
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 // destinations stores one map per contract (keyed by hash of code).

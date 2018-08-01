@@ -17,8 +17,8 @@
 package core
 
 import (
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
 )
 
 // NewTxsEvent is posted when a batch of transactions enter the transaction pool.

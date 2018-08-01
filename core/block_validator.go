@@ -19,10 +19,10 @@ package core
 import (
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/consensus"
-	"github.com/eosclassic/go-eosclassic/core/state"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/params"
+	"github.com/eosclassic/eosclassic/consensus"
+	"github.com/eosclassic/eosclassic/core/state"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/params"
 )
 
 // BlockValidator is responsible for validating block headers, uncles and

@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/metrics"
+	"github.com/eosclassic/eosclassic/metrics"
 )
 
 // a regexp for extracting the unit from time.Duration.String

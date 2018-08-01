@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/accounts/keystore"
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/accounts/keystore"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // deployNode creates a new node configuration based on some user input.

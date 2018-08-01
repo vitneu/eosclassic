@@ -19,7 +19,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/log"
 )
 
 // PutChunks adds chunks  to localstore

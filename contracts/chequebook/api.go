@@ -20,7 +20,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 const Version = "1.0"

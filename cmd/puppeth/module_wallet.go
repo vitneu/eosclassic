@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // walletDockerfile is the Dockerfile required to run a web wallet.

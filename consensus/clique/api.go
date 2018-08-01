@@ -17,10 +17,10 @@
 package clique
 
 import (
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/consensus"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/consensus"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/rpc"
 )
 
 // API is a user facing RPC API to allow controlling the signer and voting

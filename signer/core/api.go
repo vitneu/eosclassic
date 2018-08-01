@@ -25,15 +25,15 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/eosclassic/go-eosclassic/accounts"
-	"github.com/eosclassic/go-eosclassic/accounts/keystore"
-	"github.com/eosclassic/go-eosclassic/accounts/usbwallet"
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/internal/ethapi"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/accounts"
+	"github.com/eosclassic/eosclassic/accounts/keystore"
+	"github.com/eosclassic/eosclassic/accounts/usbwallet"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/internal/ethapi"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/rlp"
 )
 
 // ExternalAPI defines the external API through which signing requests are made.

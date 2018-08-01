@@ -26,7 +26,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 	"github.com/mohae/deepcopy"
 	"github.com/rjeczalik/notify"
 )

@@ -26,7 +26,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // dashboardContent is the actual dashboard HTML content to serve up when users

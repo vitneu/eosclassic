@@ -23,11 +23,11 @@ package ens
 import (
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/accounts/abi/bind"
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/contracts/ens/contract"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/accounts/abi/bind"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/contracts/ens/contract"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/crypto"
 )
 
 var (

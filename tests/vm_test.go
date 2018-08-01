@@ -19,7 +19,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/core/vm"
+	"github.com/eosclassic/eosclassic/core/vm"
 )
 
 func TestVM(t *testing.T) {

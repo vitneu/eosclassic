@@ -17,7 +17,7 @@
 package simulation
 
 import (
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/discover"
 )
 
 // BucketKey is the type that should be used for keys in simulation buckets.

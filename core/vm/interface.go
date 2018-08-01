@@ -19,8 +19,8 @@ package vm
 import (
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
 )
 
 // StateDB is an EVM database for full state querying.

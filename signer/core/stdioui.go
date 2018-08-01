@@ -21,9 +21,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/internal/ethapi"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/internal/ethapi"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/rpc"
 )
 
 type StdIOUI struct {

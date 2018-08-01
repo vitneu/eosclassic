@@ -17,8 +17,8 @@
 package les
 
 import (
-	"github.com/eosclassic/go-eosclassic/metrics"
-	"github.com/eosclassic/go-eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/metrics"
+	"github.com/eosclassic/eosclassic/p2p"
 )
 
 var (

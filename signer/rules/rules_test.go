@@ -22,13 +22,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/accounts"
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/common/hexutil"
-	"github.com/eosclassic/go-eosclassic/core/types"
-	"github.com/eosclassic/go-eosclassic/internal/ethapi"
-	"github.com/eosclassic/go-eosclassic/signer/core"
-	"github.com/eosclassic/go-eosclassic/signer/storage"
+	"github.com/eosclassic/eosclassic/accounts"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/common/hexutil"
+	"github.com/eosclassic/eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/internal/ethapi"
+	"github.com/eosclassic/eosclassic/signer/core"
+	"github.com/eosclassic/eosclassic/signer/storage"
 )
 
 const JS = `

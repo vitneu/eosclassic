@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 	colorable "github.com/mattn/go-colorable"
 )
 

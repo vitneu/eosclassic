@@ -24,8 +24,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/p2p"
 )
 
 // Tests that datadirs can be successfully created, be them manually configured

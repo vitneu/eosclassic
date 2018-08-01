@@ -19,8 +19,8 @@ package miner
 import (
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
 )
 
 // noopHeaderRetriever is an implementation of headerRetriever that always

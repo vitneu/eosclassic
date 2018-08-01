@@ -20,8 +20,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/crypto"
 )
 
 func TestConfig(t *testing.T) {

@@ -40,7 +40,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/crypto"
 )
 
 var dumpEnc bool

@@ -16,7 +16,7 @@
 
 package core
 
-import "github.com/eosclassic/go-eosclassic/common"
+import "github.com/eosclassic/eosclassic/common"
 
 // BadHashes represent a set of manually tracked bad hashes (usually hard forks)
 var BadHashes = map[common.Hash]bool{

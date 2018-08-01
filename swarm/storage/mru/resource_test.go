@@ -27,11 +27,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/contracts/ens"
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/swarm/multihash"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/contracts/ens"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/swarm/multihash"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 )
 
 var (

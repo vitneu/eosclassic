@@ -19,7 +19,7 @@ package core
 import (
 	"runtime"
 
-	"github.com/eosclassic/go-eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/core/types"
 )
 
 // senderCacher is a concurrent tranaction sender recoverer anc cacher.

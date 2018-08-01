@@ -20,11 +20,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/accounts/abi/bind"
-	"github.com/eosclassic/go-eosclassic/accounts/abi/bind/backends"
-	"github.com/eosclassic/go-eosclassic/contracts/ens/contract"
-	"github.com/eosclassic/go-eosclassic/core"
-	"github.com/eosclassic/go-eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/accounts/abi/bind"
+	"github.com/eosclassic/eosclassic/accounts/abi/bind/backends"
+	"github.com/eosclassic/eosclassic/contracts/ens/contract"
+	"github.com/eosclassic/eosclassic/core"
+	"github.com/eosclassic/eosclassic/crypto"
 )
 
 var (

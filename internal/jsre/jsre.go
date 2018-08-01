@@ -26,8 +26,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/internal/jsre/deps"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/internal/jsre/deps"
 	"github.com/robertkrimen/otto"
 )
 

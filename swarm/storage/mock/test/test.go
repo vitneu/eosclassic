@@ -25,9 +25,9 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
-	"github.com/eosclassic/go-eosclassic/swarm/storage/mock"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/swarm/storage/mock"
 )
 
 // MockStore creates NodeStore instances from provided GlobalStorer,

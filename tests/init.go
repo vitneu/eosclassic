@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/params"
+	"github.com/eosclassic/eosclassic/params"
 )
 
 // Forks table defines supported forks and their chain config.

@@ -23,8 +23,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common/mclock"
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/common/mclock"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 const (

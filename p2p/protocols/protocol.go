@@ -38,12 +38,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/metrics"
-	"github.com/eosclassic/go-eosclassic/p2p"
-	"github.com/eosclassic/go-eosclassic/rlp"
-	"github.com/eosclassic/go-eosclassic/swarm/spancontext"
-	"github.com/eosclassic/go-eosclassic/swarm/tracing"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/metrics"
+	"github.com/eosclassic/eosclassic/p2p"
+	"github.com/eosclassic/eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/swarm/spancontext"
+	"github.com/eosclassic/eosclassic/swarm/tracing"
 	opentracing "github.com/opentracing/opentracing-go"
 )
 

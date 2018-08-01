@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/eosclassic/go-eosclassic/cmd/utils"
+	"github.com/eosclassic/eosclassic/cmd/utils"
 	"gopkg.in/urfave/cli.v1"
 )
 

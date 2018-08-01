@@ -21,7 +21,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/core/types"
 )
 
 // Tests that batched bloom bits are correctly rotated from the input bloom

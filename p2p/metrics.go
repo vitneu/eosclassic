@@ -21,7 +21,7 @@ package p2p
 import (
 	"net"
 
-	"github.com/eosclassic/go-eosclassic/metrics"
+	"github.com/eosclassic/eosclassic/metrics"
 )
 
 var (

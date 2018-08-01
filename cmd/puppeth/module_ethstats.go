@@ -25,7 +25,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // ethstatsDockerfile is the Dockerfile required to build an ethstats backend

@@ -22,7 +22,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 func init() {

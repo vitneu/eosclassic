@@ -28,11 +28,11 @@
 //  	"context"
 //  	"fmt"
 //  	"os"
-//  	pss "github.com/eosclassic/go-eosclassic/swarm/pss/client"
-//  	"github.com/eosclassic/go-eosclassic/p2p/protocols"
-//  	"github.com/eosclassic/go-eosclassic/p2p"
-//  	"github.com/eosclassic/go-eosclassic/swarm/pot"
-//  	"github.com/eosclassic/go-eosclassic/swarm/log"
+//  	pss "github.com/eosclassic/eosclassic/swarm/pss/client"
+//  	"github.com/eosclassic/eosclassic/p2p/protocols"
+//  	"github.com/eosclassic/eosclassic/p2p"
+//  	"github.com/eosclassic/eosclassic/swarm/pot"
+//  	"github.com/eosclassic/eosclassic/swarm/log"
 //  )
 //
 //  type FooMsg struct {

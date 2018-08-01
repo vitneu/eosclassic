@@ -28,7 +28,7 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/eosclassic/go-eosclassic/accounts/abi"
+	"github.com/eosclassic/eosclassic/accounts/abi"
 	"golang.org/x/tools/imports"
 )
 

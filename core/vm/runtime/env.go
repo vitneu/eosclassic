@@ -17,9 +17,9 @@
 package runtime
 
 import (
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core"
-	"github.com/eosclassic/go-eosclassic/core/vm"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core"
+	"github.com/eosclassic/eosclassic/core/vm"
 )
 
 func NewEnv(cfg *Config) *vm.EVM {

@@ -21,7 +21,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/eosclassic/go-eosclassic/eth/tracers/internal/tracers"
+	"github.com/eosclassic/eosclassic/eth/tracers/internal/tracers"
 )
 
 // all contains all the built in JavaScript tracers by name.

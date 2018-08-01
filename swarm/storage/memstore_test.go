@@ -25,7 +25,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/swarm/log"
+	"github.com/eosclassic/eosclassic/swarm/log"
 )
 
 func newTestMemStore() *MemStore {

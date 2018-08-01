@@ -26,7 +26,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 	"github.com/stretchr/testify/require"
 )
 

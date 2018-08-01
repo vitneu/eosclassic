@@ -19,7 +19,7 @@ package event_test
 import (
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/event"
+	"github.com/eosclassic/eosclassic/event"
 )
 
 func ExampleNewSubscription() {

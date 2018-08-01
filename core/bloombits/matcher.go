@@ -26,8 +26,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common/bitutil"
-	"github.com/eosclassic/go-eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/common/bitutil"
+	"github.com/eosclassic/eosclassic/crypto"
 )
 
 // bloomIndexes represents the bit indexes inside the bloom filter that belong

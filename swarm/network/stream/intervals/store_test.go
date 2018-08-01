@@ -20,7 +20,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/swarm/state"
+	"github.com/eosclassic/eosclassic/swarm/state"
 )
 
 var ErrNotFound = errors.New("not found")

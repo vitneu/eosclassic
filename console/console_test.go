@@ -26,12 +26,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/consensus/ethash"
-	"github.com/eosclassic/go-eosclassic/core"
-	"github.com/eosclassic/go-eosclassic/eth"
-	"github.com/eosclassic/go-eosclassic/internal/jsre"
-	"github.com/eosclassic/go-eosclassic/node"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/consensus/ethash"
+	"github.com/eosclassic/eosclassic/core"
+	"github.com/eosclassic/eosclassic/eth"
+	"github.com/eosclassic/eosclassic/internal/jsre"
+	"github.com/eosclassic/eosclassic/node"
 )
 
 const (

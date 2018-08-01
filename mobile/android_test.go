@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/internal/build"
+	"github.com/eosclassic/eosclassic/internal/build"
 )
 
 // androidTestClass is a Java class to do some lightweight tests against the Android

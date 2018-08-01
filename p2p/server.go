@@ -25,14 +25,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/common/mclock"
-	"github.com/eosclassic/go-eosclassic/event"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/p2p/discv5"
-	"github.com/eosclassic/go-eosclassic/p2p/nat"
-	"github.com/eosclassic/go-eosclassic/p2p/netutil"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/common/mclock"
+	"github.com/eosclassic/eosclassic/event"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/discv5"
+	"github.com/eosclassic/eosclassic/p2p/nat"
+	"github.com/eosclassic/eosclassic/p2p/netutil"
 )
 
 const (

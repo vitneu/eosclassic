@@ -20,8 +20,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/core/types"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/core/types"
 )
 
 // senderFromServer is a types.Signer that remembers the sender address returned by the RPC

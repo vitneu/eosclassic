@@ -24,9 +24,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/cmd/utils"
-	"github.com/eosclassic/go-eosclassic/swarm/api"
-	swarm "github.com/eosclassic/go-eosclassic/swarm/api/client"
+	"github.com/eosclassic/eosclassic/cmd/utils"
+	"github.com/eosclassic/eosclassic/swarm/api"
+	swarm "github.com/eosclassic/eosclassic/swarm/api/client"
 	"gopkg.in/urfave/cli.v1"
 )
 

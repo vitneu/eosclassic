@@ -30,10 +30,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/swarm/api"
-	"github.com/eosclassic/go-eosclassic/swarm/storage"
+	"github.com/eosclassic/eosclassic/swarm/api"
+	"github.com/eosclassic/eosclassic/swarm/storage"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 
 	colorable "github.com/mattn/go-colorable"
 )

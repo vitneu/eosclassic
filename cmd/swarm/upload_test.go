@@ -30,8 +30,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/log"
-	swarm "github.com/eosclassic/go-eosclassic/swarm/api/client"
+	"github.com/eosclassic/eosclassic/log"
+	swarm "github.com/eosclassic/eosclassic/swarm/api/client"
 	colorable "github.com/mattn/go-colorable"
 )
 

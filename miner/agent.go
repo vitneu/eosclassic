@@ -21,8 +21,8 @@ import (
 
 	"sync/atomic"
 
-	"github.com/eosclassic/go-eosclassic/consensus"
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/consensus"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 type CpuAgent struct {

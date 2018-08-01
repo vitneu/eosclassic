@@ -20,7 +20,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/params"
+	"github.com/eosclassic/eosclassic/params"
 )
 
 func TestTransaction(t *testing.T) {

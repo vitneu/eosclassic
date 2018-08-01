@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common/math"
+	"github.com/eosclassic/eosclassic/common/math"
 )
 
 func TestBlockNumberJSONUnmarshal(t *testing.T) {

@@ -22,7 +22,7 @@ import (
 	"testing"
 
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/eosclassic/go-eosclassic/internal/cmdtest"
+	"github.com/eosclassic/eosclassic/internal/cmdtest"
 )
 
 type testEthkey struct {

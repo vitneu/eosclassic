@@ -24,8 +24,8 @@ import (
 
 	"strings"
 
-	"github.com/eosclassic/go-eosclassic/cmd/utils"
-	"github.com/eosclassic/go-eosclassic/internal/debug"
+	"github.com/eosclassic/eosclassic/cmd/utils"
+	"github.com/eosclassic/eosclassic/internal/debug"
 	"gopkg.in/urfave/cli.v1"
 )
 

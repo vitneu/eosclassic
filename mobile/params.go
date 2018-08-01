@@ -21,9 +21,9 @@ package geth
 import (
 	"encoding/json"
 
-	"github.com/eosclassic/go-eosclassic/core"
-	"github.com/eosclassic/go-eosclassic/p2p/discv5"
-	"github.com/eosclassic/go-eosclassic/params"
+	"github.com/eosclassic/eosclassic/core"
+	"github.com/eosclassic/eosclassic/p2p/discv5"
+	"github.com/eosclassic/eosclassic/params"
 )
 
 // MainnetGenesis returns the JSON spec to use for the main Ethereum network. It

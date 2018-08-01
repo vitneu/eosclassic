@@ -24,13 +24,13 @@ import (
 	"net"
 	"os"
 
-	"github.com/eosclassic/go-eosclassic/cmd/utils"
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/log"
-	"github.com/eosclassic/go-eosclassic/p2p/discover"
-	"github.com/eosclassic/go-eosclassic/p2p/discv5"
-	"github.com/eosclassic/go-eosclassic/p2p/nat"
-	"github.com/eosclassic/go-eosclassic/p2p/netutil"
+	"github.com/eosclassic/eosclassic/cmd/utils"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/log"
+	"github.com/eosclassic/eosclassic/p2p/discover"
+	"github.com/eosclassic/eosclassic/p2p/discv5"
+	"github.com/eosclassic/eosclassic/p2p/nat"
+	"github.com/eosclassic/eosclassic/p2p/netutil"
 )
 
 func main() {

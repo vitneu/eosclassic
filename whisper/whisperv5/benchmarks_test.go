@@ -19,7 +19,7 @@ package whisperv5
 import (
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/crypto"
 )
 
 func BenchmarkDeriveKeyMaterial(b *testing.B) {

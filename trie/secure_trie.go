@@ -19,8 +19,8 @@ package trie
 import (
 	"fmt"
 
-	"github.com/eosclassic/go-eosclassic/common"
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/common"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // SecureTrie wraps a trie with key hashing. In a secure trie, all

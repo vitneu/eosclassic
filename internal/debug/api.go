@@ -34,7 +34,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // Handler is the global debugging handler.

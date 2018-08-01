@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/eosclassic/go-eosclassic/common"
+	"github.com/eosclassic/eosclassic/common"
 )
 
 func TestHexOrDecimal256(t *testing.T) {

@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/rpc"
-	"github.com/eosclassic/go-eosclassic/swarm"
-	"github.com/eosclassic/go-eosclassic/swarm/api"
+	"github.com/eosclassic/eosclassic/rpc"
+	"github.com/eosclassic/eosclassic/swarm"
+	"github.com/eosclassic/eosclassic/swarm/api"
 
 	"github.com/docker/docker/pkg/reexec"
 )

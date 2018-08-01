@@ -25,7 +25,7 @@ import (
 
 	"golang.org/x/net/html"
 
-	"github.com/eosclassic/go-eosclassic/swarm/testutil"
+	"github.com/eosclassic/eosclassic/swarm/testutil"
 )
 
 func TestError(t *testing.T) {

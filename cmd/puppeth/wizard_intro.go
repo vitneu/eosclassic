@@ -26,7 +26,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/eosclassic/go-eosclassic/log"
+	"github.com/eosclassic/eosclassic/log"
 )
 
 // makeWizard creates and returns a new puppeth wizard.

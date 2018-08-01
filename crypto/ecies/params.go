@@ -42,7 +42,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "github.com/eosclassic/go-eosclassic/crypto"
+	ethcrypto "github.com/eosclassic/eosclassic/crypto"
 )
 
 var (

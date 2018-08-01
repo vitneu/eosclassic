@@ -22,8 +22,8 @@ import (
 	"io"
 	"net"
 
-	"github.com/eosclassic/go-eosclassic/crypto"
-	"github.com/eosclassic/go-eosclassic/rlp"
+	"github.com/eosclassic/eosclassic/crypto"
+	"github.com/eosclassic/eosclassic/rlp"
 )
 
 // Entry is implemented by known node record entry types.

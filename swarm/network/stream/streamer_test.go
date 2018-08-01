@@ -22,8 +22,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eosclassic/go-eosclassic/crypto/sha3"
-	p2ptest "github.com/eosclassic/go-eosclassic/p2p/testing"
+	"github.com/eosclassic/eosclassic/crypto/sha3"
+	p2ptest "github.com/eosclassic/eosclassic/p2p/testing"
 )
 
 func TestStreamerSubscribe(t *testing.T) {

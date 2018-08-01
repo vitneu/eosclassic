@@ -73,14 +73,12 @@ To get an idea how the file should look like you can use the `dumpconfig` subcom
 $ eosc --your-favourite-flags dumpconfig
 ```
 
-*Note: This works only with eosc v1.6.0 and above.*
-
 #### Docker quick start
 
 One of the quickest ways to get EOS Classic up and running on your machine is by using Docker:
 
 ```
-docker run -d --name ethereum-node -v /Users/alice/eosclassic:/root \
+docker run -d --name eosclassic-node -v /Users/alice/eosclassic:/root \
            -p 8282:8282 -p 25252:25252 \
            eosclassic/eosclassic
 ```

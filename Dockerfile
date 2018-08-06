@@ -12,5 +12,5 @@ FROM alpine:latest
 RUN apk add --no-cache ca-certificates
 COPY --from=builder /eosclassic/build/bin/eosc /usr/local/bin/
 
-EXPOSE 8282 8546 25252 25252/udp
+EXPOSE 8282 8285 25252 25252/udp
 ENTRYPOINT ["eosc"]

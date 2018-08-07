@@ -46,6 +46,7 @@ var (
 		ByzantiumBlock:      big.NewInt(4370000),
 		DisposalBlock:       nil,
 		NewEOSCBlock:        nil,
+		EIP100Block:         nil,
 		ECIP1017EraRounds:   nil,
 		ConstantinopleBlock: nil,
 		Ethash:              new(EthashConfig),
@@ -65,6 +66,7 @@ var (
 		ByzantiumBlock:      nil,
 		DisposalBlock:       big.NewInt(100),
 		NewEOSCBlock:        big.NewInt(150000),
+		EIP100Block:         nil,
 		ECIP1017EraRounds:   big.NewInt(2500000),
 		ConstantinopleBlock: nil,
 		Ethash:              new(EthashConfig),
@@ -84,6 +86,7 @@ var (
 		ByzantiumBlock:      big.NewInt(0),
 		DisposalBlock:       nil,
 		NewEOSCBlock:        nil,
+		EIP100Block:         nil,
 		ECIP1017EraRounds:   nil,
 		ConstantinopleBlock: nil,
 		Clique: &CliqueConfig{
@@ -106,6 +109,7 @@ var (
 		ByzantiumBlock:      big.NewInt(1700000),
 		DisposalBlock:       nil,
 		NewEOSCBlock:        nil,
+		EIP100Block:         nil,
 		ECIP1017EraRounds:   nil,
 		ConstantinopleBlock: nil,
 		Ethash:              new(EthashConfig),
@@ -125,6 +129,7 @@ var (
 		ByzantiumBlock:      big.NewInt(1035301),
 		DisposalBlock:       nil,
 		NewEOSCBlock:        nil,
+		EIP100Block:         nil,
 		ECIP1017EraRounds:   nil,
 		ConstantinopleBlock: nil,
 		Clique: &CliqueConfig{
@@ -138,16 +143,16 @@ var (
 	//
 	// This configuration is intentionally not using keyed fields to force anyone
 	// adding flags to the config to also have to set these fields.
-	AllEthashProtocolChanges = &ChainConfig{big.NewInt(1337), big.NewInt(0), nil, false, big.NewInt(0), common.Hash{}, big.NewInt(0), big.NewInt(0), nil, big.NewInt(0), nil, nil, nil, nil, new(EthashConfig), nil}
+	AllEthashProtocolChanges = &ChainConfig{big.NewInt(1337), big.NewInt(0), nil, false, big.NewInt(0), common.Hash{}, big.NewInt(0), big.NewInt(0), nil, big.NewInt(0), nil, nil, nil, nil, nil, new(EthashConfig), nil}
 
 	// AllCliqueProtocolChanges contains every protocol change (EIPs) introduced
 	// and accepted by the Ethereum core developers into the Clique consensus.
 	//
 	// This configuration is intentionally not using keyed fields to force anyone
 	// adding flags to the config to also have to set these fields.
-	AllCliqueProtocolChanges = &ChainConfig{big.NewInt(1337), big.NewInt(0), nil, false, big.NewInt(0), common.Hash{}, big.NewInt(0), big.NewInt(0), nil, big.NewInt(0), nil, nil, nil, nil, nil, &CliqueConfig{Period: 0, Epoch: 30000}}
+	AllCliqueProtocolChanges = &ChainConfig{big.NewInt(1337), big.NewInt(0), nil, false, big.NewInt(0), common.Hash{}, big.NewInt(0), big.NewInt(0), nil, big.NewInt(0), nil, nil, nil, nil, nil, nil, &CliqueConfig{Period: 0, Epoch: 30000}}
 
-	TestChainConfig = &ChainConfig{big.NewInt(1), big.NewInt(0), nil, false, big.NewInt(0), common.Hash{}, big.NewInt(0), big.NewInt(0), nil, big.NewInt(0), nil, nil, nil, nil, new(EthashConfig), nil}
+	TestChainConfig = &ChainConfig{big.NewInt(1), big.NewInt(0), nil, false, big.NewInt(0), common.Hash{}, big.NewInt(0), big.NewInt(0), nil, big.NewInt(0), nil, nil, nil, nil, nil, new(EthashConfig), nil}
 	TestRules       = TestChainConfig.Rules(new(big.Int))
 )
 
@@ -175,6 +180,7 @@ type ChainConfig struct {
 	ByzantiumBlock      *big.Int `json:"byzantiumBlock,omitempty"`      // Byzantium switch block (nil = no fork, 0 = already on byzantium)
 	DisposalBlock       *big.Int `json:"disposalBlock,omitempty"`       // Bomb disposal HF block (nil = no fork, 0 = already activated)
 	NewEOSCBlock        *big.Int `json:"neweoscBlock,omitempty"`        // NewEOSC switch block (nil = no fork, 0 = welcome to the new era of mining!)
+	EIP100Block         *big.Int `json:"eip100Block,omitempty"`         // EIP100 HF block
 	ECIP1017EraRounds   *big.Int `json:"ecip1017EraRounds,omitempty"`   // ECIP1017 era rounds
 	ConstantinopleBlock *big.Int `json:"constantinopleBlock,omitempty"` // Constantinople switch block (nil = no fork, 0 = already activated)
 
@@ -213,7 +219,7 @@ func (c *ChainConfig) String() string {
 	default:
 		engine = "unknown"
 	}
-	return fmt.Sprintf("{ChainID: %v Homestead: %v DAO: %v DAOSupport: %v EIP150: %v EIP155: %v EIP158: %v EIP160: %v Byzantium: %v Disposal: %v NewEOSC: %v ECIP1017: %v Constantinople: %v Engine: %v}",
+	return fmt.Sprintf("{ChainID: %v Homestead: %v DAO: %v DAOSupport: %v EIP150: %v EIP155: %v EIP158: %v EIP160: %v Byzantium: %v Disposal: %v NewEOSC: %v EIP100: %v ECIP1017: %v Constantinople: %v Engine: %v}",
 		c.ChainID,
 		c.HomesteadBlock,
 		c.DAOForkBlock,
@@ -225,6 +231,7 @@ func (c *ChainConfig) String() string {
 		c.ByzantiumBlock,
 		c.DisposalBlock,
 		c.NewEOSCBlock,
+		c.EIP100Block,
 		c.ECIP1017EraRounds,
 		c.ConstantinopleBlock,
 		engine,
@@ -274,6 +281,11 @@ func (c *ChainConfig) IsBombDisposal(num *big.Int) bool {
 // IsNewEOSC returns whether num is either equal to the NewEOSC fork block or greater.
 func (c *ChainConfig) IsNewEOSC(num *big.Int) bool {
 	return isForked(c.NewEOSCBlock, num)
+}
+
+// IsEIP100 returns whether num is either equal to the EIP100 fork block or greater.
+func (c *ChainConfig) IsEIP100(num *big.Int) bool {
+	return isForked(c.EIP100Block, num)
 }
 
 // HasECIP1017 returns whether the chain is configured with ECIP1017.
@@ -357,6 +369,9 @@ func (c *ChainConfig) checkCompatible(newcfg *ChainConfig, head *big.Int) *Confi
 	if isForkIncompatible(c.NewEOSCBlock, newcfg.NewEOSCBlock, head) {
 		return newCompatError("NewEOSC fork block", c.NewEOSCBlock, newcfg.NewEOSCBlock)
 	}
+	if isForkIncompatible(c.EIP100Block, newcfg.EIP100Block, head) {
+		return newCompatError("EIP100 fork block", c.EIP100Block, newcfg.EIP100Block)
+	}
 	if isForkIncompatible(c.ConstantinopleBlock, newcfg.ConstantinopleBlock, head) {
 		return newCompatError("Constantinople fork block", c.ConstantinopleBlock, newcfg.ConstantinopleBlock)
 	}
@@ -426,7 +441,7 @@ func (err *ConfigCompatError) Error() string {
 type Rules struct {
 	ChainID                                   *big.Int
 	IsHomestead, IsEIP150, IsEIP155, IsEIP158 bool
-	IsByzantium, IsNewEOSC                    bool
+	IsByzantium, IsNewEOSC, IsEIP100          bool
 }
 
 // Rules ensures c's ChainID is not nil.
@@ -435,5 +450,5 @@ func (c *ChainConfig) Rules(num *big.Int) Rules {
 	if chainID == nil {
 		chainID = new(big.Int)
 	}
-	return Rules{ChainID: new(big.Int).Set(chainID), IsHomestead: c.IsHomestead(num), IsEIP150: c.IsEIP150(num), IsEIP155: c.IsEIP155(num), IsEIP158: c.IsEIP158(num), IsByzantium: c.IsByzantium(num), IsNewEOSC: c.IsNewEOSC(num)}
+	return Rules{ChainID: new(big.Int).Set(chainID), IsHomestead: c.IsHomestead(num), IsEIP150: c.IsEIP150(num), IsEIP155: c.IsEIP155(num), IsEIP158: c.IsEIP158(num), IsByzantium: c.IsByzantium(num), IsNewEOSC: c.IsNewEOSC(num), IsEIP100: c.IsEIP100(num)}
 }

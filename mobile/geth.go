@@ -81,10 +81,10 @@ type NodeConfig struct {
 // defaultNodeConfig contains the default node configuration values to use if all
 // or some fields are missing from the user's specified list.
 var defaultNodeConfig = &NodeConfig{
-	BootstrapNodes:        FoundationBootnodes(),
+	BootstrapNodes:        EOSClassicBootnodes(),
 	MaxPeers:              25,
 	EthereumEnabled:       true,
-	EthereumNetworkID:     1,
+	EthereumNetworkID:     20,
 	EthereumDatabaseCache: 16,
 }
 
@@ -148,8 +148,14 @@ func NewNode(datadir string, config *NodeConfig) (stack *Node, _ error) {
 		// If we have the testnet, hard code the chain configs too
 		if config.EthereumGenesis == TestnetGenesis() {
 			genesis.Config = params.TestnetChainConfig
-			if config.EthereumNetworkID == 1 {
+			if config.EthereumNetworkID == 20 {
 				config.EthereumNetworkID = 3
+			}
+		}
+		if config.EthereumGenesis == EOSCTestGenesis() {
+			genesis.Config = params.EOSCTestChainConfig
+			if config.EthereumNetworkID == 20 {
+				config.EthereumNetworkID = 21
 			}
 		}
 	}

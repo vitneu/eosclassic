@@ -65,7 +65,7 @@ type flagGroup struct {
 // AppHelpFlagGroups is the application flags, grouped by functionality.
 var AppHelpFlagGroups = []flagGroup{
 	{
-		Name: "ETHEREUM",
+		Name: "EOS CLASSIC",
 		Flags: []cli.Flag{
 			configFileFlag,
 			utils.DataDirFlag,

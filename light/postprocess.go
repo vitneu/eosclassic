@@ -72,12 +72,21 @@ var (
 		chtRoot:       common.HexToHash("15cba18e4de0ab1e95e202625199ba30147aec8b0b70384b66ebea31ba6a18e0"),
 		bloomTrieRoot: common.HexToHash("e00fa6389b2e597d9df52172cd8e936879eed0fca4fa59db99e2c8ed682562f2"),
 	}
+
+	eosclassicCheckpoint = trustedCheckpoint{
+		name:          "eosclassic",
+		sectionIdx:    12,
+		sectionHead:   common.HexToHash("23c0c4a886b4b30faf01ee08db02fdef793e0a76bdf22bc809413f48e2fa0d80"),
+		chtRoot:       common.HexToHash("172a388ed51cc1cb8256543c21c5b6b571714cf31cd6f4fa3e36ff81a7d36c8e"),
+		bloomTrieRoot: common.HexToHash("184633e6b859e229c1b07c44d225ddfb62f31cf464243e810338b154c0b53c18"),
+	}
 )
 
 // trustedCheckpoints associates each known checkpoint with the genesis hash of the chain it belongs to
 var trustedCheckpoints = map[common.Hash]trustedCheckpoint{
-	params.MainnetGenesisHash: mainnetCheckpoint,
-	params.TestnetGenesisHash: ropstenCheckpoint,
+	params.MainnetGenesisHash:    mainnetCheckpoint,
+	params.TestnetGenesisHash:    ropstenCheckpoint,
+	params.EOSClassicGenesisHash: eosclassicCheckpoint,
 }
 
 var (

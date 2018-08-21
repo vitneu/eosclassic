@@ -368,7 +368,7 @@ var (
 	// Logging and debug settings
 	EthStatsURLFlag = cli.StringFlag{
 		Name:  "ethstats",
-		Usage: "Reporting URL of a ethstats service (nodename:secret@host:port)",
+		Usage: "Reporting node status to stats.eos-classic.io (nodename:EOSClassic@stats.eos-classic.io)",
 	}
 	FakePoWFlag = cli.BoolFlag{
 		Name:  "fakepow",

@@ -28,7 +28,7 @@ The eosclassic project comes with several wrappers/executables found in the `cmd
 
 | Command    | Description |
 |:----------:|-------------|
-| **`eosc`** | Our main EOS Classic CLI client. It is the entry point into the EOS Classic network (main-, test- or private net), capable of running as a full node (default) archive node (retaining all historical state) or a light node (retrieving data live). It can be used by other processes as a gateway into the EOS Classic network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `eosc --help` and the [CLI Wiki page](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options) for command line options. |
+| **`eosc`** | Our main EOS Classic CLI client. It is the entry point into the EOS Classic network (main-, test- or private net), capable of running as a full node (default), archive node (retaining all historical state) or a light node (retrieving data live). It can be used by other processes as a gateway into the EOS Classic network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `eosc --help` and the [CLI Wiki page](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options) for command line options. |
 
 ## Running eosc
 
@@ -56,7 +56,7 @@ This command will:
  * Start up EOSC's built-in interactive [JavaScript console](https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console),
    (via the trailing `console` subcommand) through which you can invoke all official [`web3` methods](https://github.com/ethereum/wiki/wiki/JavaScript-API)
    as well as EOSC's own [management APIs](https://github.com/ethereum/go-ethereum/wiki/Management-APIs).
-   This too is optional and if you leave it out you can always attach to an already running EOSC instance
+   This tool is optional and if you leave it out you can always attach to an already running EOSC instance
    with `eosc attach`.
 
 ### Configuration

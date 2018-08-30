@@ -46,10 +46,10 @@ var (
 	NewEOSCPOWReward         = new(big.Int).Mul(big.NewInt(42), big.NewInt(1e+18))  // Block reward in wei for successfully mining a block upward from NewEOSC
 	NewEOSCFundReward        = new(big.Int).Mul(big.NewInt(12), big.NewInt(1e+18))  // Block reward in wei for successfully mining a block upward from NewEOSC
 	NewEOSCPOSReward         = new(big.Int).Mul(big.NewInt(6), big.NewInt(1e+18))   // Block reward in wei for successfully mining a block upward from NewEOSC
-	maxUncles                         = 2                                                    // Maximum number of uncles allowed in a single block
-	allowedFutureBlockTime            = 15 * time.Second                                     // Max time from current time allowed for blocks, before they're considered future blocks
-	DisinflationRateQuotient          = big.NewInt(4)                                        // Disinflation rate quotient for ECIP1017
-	DisinflationRateDivisor           = big.NewInt(5)                                        // Disinflation rate divisor for ECIP1017
+	maxUncles                = 2                                                    // Maximum number of uncles allowed in a single block
+	allowedFutureBlockTime   = 15 * time.Second                                     // Max time from current time allowed for blocks, before they're considered future blocks
+	DisinflationRateQuotient = big.NewInt(4)                                        // Disinflation rate quotient for ECIP1017
+	DisinflationRateDivisor  = big.NewInt(5)                                        // Disinflation rate divisor for ECIP1017
 )
 
 // Various error messages to mark blocks invalid. These should be private to

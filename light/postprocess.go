@@ -138,10 +138,10 @@ var trustedCheckpoints = map[common.Hash]TrustedCheckpoint{
 	},
 	params.EOSClassicGenesisHash: {
 		name:        "eosclassic",
-		SectionIdx:  12,
-		SectionHead: common.HexToHash("23c0c4a886b4b30faf01ee08db02fdef793e0a76bdf22bc809413f48e2fa0d80"),
-		CHTRoot:     common.HexToHash("172a388ed51cc1cb8256543c21c5b6b571714cf31cd6f4fa3e36ff81a7d36c8e"),
-		BloomRoot:   common.HexToHash("184633e6b859e229c1b07c44d225ddfb62f31cf464243e810338b154c0b53c18"),
+		SectionIdx:  16,
+		SectionHead: common.HexToHash("602ad8bcda8c03bc8b0fb59acc629b6ab6ff69d2fd5087cb4c68ad336e84baa0"),
+		CHTRoot:     common.HexToHash("4eebe58c78502c340ff87841fd6584bb77596be7f8dabb0332587f2541142261"),
+		BloomRoot:   common.HexToHash("332dd24e2d8542fb53a0b17dd933ef3844e640db8afdade15fec16a49f8fa67b"),
 	},
 }
 

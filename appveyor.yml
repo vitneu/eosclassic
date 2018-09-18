@@ -27,10 +27,6 @@ build_script:
   - go run build\ci.go install
   - 7z a eosc-win64-%APPVEYOR_REPO_TAG_NAME%.zip .\build\bin\eosc.exe
 
-#test_script:
-  #- set CGO_ENABLED=1
-  #- go run build\ci.go test
-
 artifacts:
   - path: '*.zip'
     name: eosc

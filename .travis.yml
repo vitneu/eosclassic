@@ -3,6 +3,17 @@ go_import_path: github.com/eosclassic/eosclassic
 sudo: false
 matrix:
   include:
+      # These are the latest Go versions - Test only
+    - os: linux
+      dist: trusty
+      sudo: required
+      go: 1.11.x
+      script:
+        - sudo modprobe fuse
+        - sudo chmod 666 /dev/fuse
+        - sudo chown root:$USER /etc/fuse.conf
+        - go run build/ci.go install
+        - travis_wait 60 go run build/ci.go test
     # These are the latest Go versions.
     - os: linux
       dist: trusty
@@ -13,7 +24,6 @@ matrix:
         - sudo chmod 666 /dev/fuse
         - sudo chown root:$USER /etc/fuse.conf
         - go run build/ci.go install
-        #- travis_wait 60 go run build/ci.go test
       before_deploy:
         - sh build/deploy.sh
       deploy:
@@ -34,7 +44,6 @@ matrix:
       script:
         - unset -f cd # workaround for https://github.com/travis-ci/travis-ci/issues/8703
         - go run build/ci.go install
-        #- travis_wait 60 go run build/ci.go test
       before_deploy:
         - sh build/deploy.sh
       deploy:
